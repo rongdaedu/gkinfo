@@ -1,0 +1,1053 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link href="/templets/default/css/style.css" rel="stylesheet" type="text/css" />
+<script language=JavaScript type="text/javascript" src="/templets/default/js/tab.js"></script>
+<script language="javascript" type="text/javascript" src="/templets/default//js/pic_scroll.js"></script>
+<script>
+ function check_submit(){  
+
+            if($("sj").value =="" || $("sj").value=="请输入电话"){  
+
+                alert("电话不能为空!");  
+
+                return false;  
+
+            }  
+
+			if($("ly").value =="" || $("ly").value=="请输入内容"){  
+
+                alert("内容不能为空!");  
+
+                return false;  
+
+            }  
+
+        }  
+
+</script>
+<!--右侧QQ-->
+<link href="/templets/default/css/common.css" rel="stylesheet" type="text/css" />
+<SCRIPT type="text/javascript" src="/templets/default/js/jquery.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="/templets/default/js/kefu.js"></SCRIPT>
+</head>
+<body>
+{dede:include filename="head.htm"/} 
+<div class="top_nav">
+  <div class="top_nav1">
+    <div class="top_nav_left">
+      <div class="top_nav_title">报 考</div>
+      <div class="top_nav_news">
+        <ul>
+          <li>本科</li>
+          <li><a href="/daquan/" target="_blank">院校大全 </a></li>
+          <li><a href="/gbyx" target="_blank">公办大学 </a></li>
+          <li><span><a href="/mbyx" target="_blank">民办大学</a></span></li>
+          <li><a href="/zkyx" target="_blank">自主招生</a></li>
+          <li><a href="/jhwzs" target="_blank">计划外招生</a></li>
+          <li><a href="/zwlx" target="_blank">中外合作院校</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="top_nav_left">
+      <div class="top_nav_title">专 题</div>
+      <div class="top_nav_news">
+        <ul>
+          <li><span><a href="/sxs/" target="_blank">三校生自主招生</a></span></li>
+          <li><a href="/sxs/" target="_blank">3月专科自主招生</a></li>
+          <li><a href="/cjwt/wtlb/2013/0118/482.html" target="_blank">国家承认的文凭</a></li>
+          <li><a href="/cjwt/wtlb/2013/0118/487.html" target="_blank">如何根据专业选择学校</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="top_nav_left">
+      <div class="top_nav_title">流 程</div>
+      <div class="top_nav_news">
+        <ul>
+          <li>挑选大学</li>
+          <li><span>选择专业</span></li>
+          <li>填报志愿</li>
+          <li>审核</li>
+          <li>录取</li>
+          <li>发通知书</li>
+          <li>入学报到</li>
+        </ul>
+      </div>
+    </div>
+    <div class="top_nav_left">
+      <div class="top_nav_title">服 务</div>
+      <div class="top_nav_news">
+        <ul>
+          <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2562177520&site=qq&menu=yes">在线咨询</a></li>
+          <li><a href="/plus/search.php?kwtype=0&q=%E6%8B%9B%E7%94%9F%E7%AE%80%E7%AB%A0" target="_blank">招生简章</a></li>
+          <li><span><a href="/templets/default/bm.html" target="_blank">在线报名</a></span></li>
+          <li><a href="/gaokaozhiyuan">高考志愿</a></li>
+          <li><span><a href="/cjwt">常见问题</a></span></li>
+          <li><a href="/cjwt/2013/0118/506.html" target="_blank">入学须知 </a></li>
+          <li><a href="/gywm/2013/0118/499.html" target="_blank">联系我们</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="topbar" style="height:80px;">
+<a href="http://www.gaokaoinfo.cn/zhiyuantianbao/" target="_blank">
+<embed type="application/x-shockwave-flash" src="/flash/bmban.swf" height="80" width="960" wmode="opaque">
+</embed></a>
+<!--img src="{dede:global.cfg_templets_skin/}/images/pinggubanner.gif"-->
+</div>
+
+
+<div class="topbar" style="height:200px;">
+<a href="/luobang/" target="_blank"><img src="/templets/default/images/banner_cjfsx.gif" /></a>
+</div>
+
+<!--div class="box_banner"><a href="/luobang/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/box_banner02.jpg"/></a></div-->
+
+<div class="box" style="padding-bottom: 15px;display:none;" >
+<!--a href="http://www.zhongboedu.com" target="_blank"><img src="/templets/default/images/box_bannerzb.gif"/></a-->
+<!--<div style="width:960px;;_height:60px;background:url(images/marquee.png);margin-top:10px;margin-bottom:15px;">
+<div id="drk_colee_left0" style="overflow:hidden;width:960px;margin:5px auto 0 auto;">
+	<table>
+      <tbody><tr>
+      	<td id="drk_colee_left1">
+        	<div style="white-space:nowrap;">
+            	<a href="/templets/default/bm.html" target="_blank" style="font-size:45px;font-family:黑体;color:#fc1626;text-decoration: none;">中国高考信息网是官方指定的高考资讯、全国院校推荐、志愿填报网站。</a>&nbsp;
+                <a href="/templets/default/bm.html" target="_blank" style="font-size:45px;font-family:黑体;color:#fc1626;text-decoration: none;">成立八周年，帮助上万名低分落榜学子成功上大学。</a>
+            </div>
+        </td>
+        <td id="drk_colee_left2">
+        	
+        </td>
+      </tr>
+    </tbody></table>
+</div>
+</div>
+
+<script type="text/javascript">
+var drk_colee_left2 = get_ids("drk_colee_left2");
+var drk_colee_left1 = get_ids("drk_colee_left1");
+var drk_colee_left0 = get_ids("drk_colee_left0");
+var drk_ledtd = get_ids("drk_ledtd");
+drk_colee_left2.innerHTML = drk_colee_left1.innerHTML; 
+function drk_Marquee3(){
+   if(drk_colee_left2.offsetWidth - drk_colee_left0.scrollLeft<=0)
+      drk_colee_left0.scrollLeft -= drk_colee_left1.offsetWidth
+   else{
+      drk_colee_left0.scrollLeft++
+   }
+}
+var drk_MyMar3 = setInterval(drk_Marquee3,20)
+drk_colee_left0.onmouseover = function() {clearInterval(drk_MyMar3)}
+drk_colee_left0.onmouseout  = function() {drk_MyMar3 = setInterval(drk_Marquee3,20)}
+function get_ids(id){
+	return document.getElementById(id);
+}
+</script>-->
+
+</div>
+
+
+<div class="top_soso">
+<form name="formsearch" action="/plus/search.php" target="_blank">
+ <p class="s1">
+      <input type="hidden" name="kwtype" value="0">
+	  <input name="q" type="text" class="search-text1" id="search-txt1" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}">
+    </p>
+    <p class="s2">
+       <button type="submit" class="search_submit" id=""></button>
+	</p>
+</form>
+  <div class="soso_right">
+<ul>
+          <li><b>热门搜索：</b></li>
+          <li><a href="/plus/search.php?kwtype=0&q=%E6%8B%9B%E7%94%9F%E7%AE%80%E7%AB%A0" target="_blank">招生简章</a></li>
+          <li><a href="/plus/search.php?kwtype=0&q=%E5%88%86%E6%95%B0%E7%BA%BF" target="_blank">分数线</a></li>
+          <li><a href="/cjwt/wtlb/2013/0118/487.html" target="_blank">怎样根据专业选择学校</a></li>
+        </ul>
+  
+  </div>
+</div>
+<div class="icon"></div>
+<div class="box">
+  <div class="box_left">
+    <div class="box_left_c">
+      	<div class="banner">
+		<script language='JavaScript' type="text/javascript">
+linkarr = new Array();
+picarr = new Array();
+textarr = new Array();
+var swf_width=280;
+var swf_height=173;
+//文字颜色|文字位置|文字背景颜色|文字背景透明度|按键文字颜色|按键默认颜色|按键当前颜色|自动播放时间|图片过渡效果|是否显示按钮|打开方式
+var configtg='0xffffff|300|0x2ca0e9|0|0x2ca0e9|0xC5DDBC|0xffffff|5|3|1|_blank';
+var files = "";
+var links = "";
+var texts = "";
+//这里设置调用标记
+{dede:arclist flag='f' typeid='57' row='4'}
+linkarr[[field:global.autoindex/]] = "[field:arcurl/]";
+picarr[[field:global.autoindex/]]  = "[field:litpic/]";
+textarr[[field:global.autoindex/]] = "[field:title function='html2text(@me)'/]";
+{/dede:arclist}
+for(i=1;i<picarr.length;i++){
+if(files=="") files = picarr[i];
+else files += "|"+picarr[i];
+}
+for(i=1;i<linkarr.length;i++){
+if(links=="") links = linkarr[i];
+else links += "|"+linkarr[i];
+}
+for(i=1;i<textarr.length;i++){
+if(texts=="") texts = textarr[i];
+else texts += "|"+textarr[i];
+}
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
+document.write('<param name="movie" value="{dede:global.cfg_templets_skin/}/images/bcastr3.swf"><param name="quality" value="high">');
+document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+document.write('<param name="FlashVars" value="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'&bcastr_config='+configtg+'">');
+document.write('<embed src="{dede:global.cfg_templets_skin/}/images/bcastr3.swf" wmode="opaque" FlashVars="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'&bcastr_config='+configtg+'&menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>');
+</script></div>
+      <div class="news">
+        <div class="news_title">
+        <h1>
+<a href="/cjfsx/" target="_blank" style="color:#F00">2014年高考成绩、分数线查询通道</a>
+</h1>
+        <ul>
+		  <li><a href="/tbsj/">[2014年各省市高考志愿填报时间]</a></li>
+          <li style="float:right;color:#F00"><a href="/lnfsx/">[各省市历年高考分数线查询]</a></li>
+        </ul>
+        </div>
+        <div class="news2">
+         <ul>
+          <li><span>[政策动态]</span><a href="/zcdt/zxzx/yw/2014/0616/13336.html" target="_blank" style="color:#F00">2014年各省市高考成绩查询时间及方式一览表</a></li>
+          <li><span>[最新资讯]</span><a href="/zcdt/zxzx/yw/2014/0617/13350.html" target="_blank" style="color:#F00">2014年各省市高考分数线预测一览表</a></li>
+          <li><span>[志愿填报]</span><a href="/zcdt/zxzx/yw/2014/0618/13359.html" target="_blank" style="color:#F00">2014年高考各省市填报志愿时间及安排一览表</a></li>
+          <li><span>[招生简章]</span><a href="/zhongbo/" target="_blank">上海中博学院2014年自主招生简章
+</a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div class="box_left_c1">
+      <div class="box_yx1">
+        <div class="box_yx_tu"><a href="/gbyx/zsjz/2014/0529/13178.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/y_01.gif"/></a><span><a href="/gbyx/zsjz/2014/0529/13178.html" target="_blank">招生简章</a>    <a href="/templets/default/bm.html" target="_blank">在线报名</a></span></div>
+        <div class="box_yx_tu"><a href="/gbyx/zsjz/2014/0529/13176.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/y_02.gif"/></a><span><a href="/gbyx/zsjz/2014/0529/13176.html" target="_blank">招生简章</a>    <a href="/templets/default/bm.html" target="_blank">在线报名</a></span></div>
+        <div class="box_yx_tu"><a href="/gbyx/zsjz/2014/0529/13175.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/y_03.gif"/></a><span><a href="/gbyx/zsjz/2014/0529/13175.html" target="_blank">招生简章</a>    <a href="/templets/default/bm.html" target="_blank">在线报名</a></span></div>
+        <div class="box_yx_tu"><a href="/gbyx/zsjz/2014/0529/13172.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/y_04.gif"/></a><span><a href="/gbyx/zsjz/2014/0529/13172.html" target="_blank">招生简章</a>    <a href="/templets/default/bm.html" target="_blank">在线报名</a></span></div>
+        <p> </p>
+      </div>
+      <div class="box_yx2">
+        <div class="box_yx_tu"><a href="/gbyx/zsjz/2014/0529/13171.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/y_05.gif"/></a><span><a href="/gbyx/zsjz/2014/0529/13171.html" target="_blank">招生简章</a>    <a href="/templets/default/bm.html" target="_blank">在线报名</a></span></div>
+        <div class="box_yx_tu"><a href="/gbyx/zsjz/2014/0529/13170.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/y_06.gif"/></a><span><a href="/gbyx/zsjz/2014/0529/13170.html" target="_blank">招生简章</a>    <a href="/templets/default/bm.html" target="_blank">在线报名</a></span></div>
+        <div class="box_yx_tu"><a href="/gbyx/zsjz/2014/0529/13177.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/y_07.gif"/></a><span><a href="/gbyx/zsjz/2014/0529/13177.html" target="_blank">招生简章</a>    <a href="/templets/default/bm.html" target="_blank">在线报名</a></span></div>
+        <div class="box_yx_tu"><a href="/gbyx/zsjz/2014/0529/13174.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/y_08.gif"/></a><span><a href="/gbyx/zsjz/2014/0529/13174.html" target="_blank">招生简章</a>    <a href="/templets/default/bm.html" target="_blank">在线报名</a></span></div>
+      </div>
+    </div>
+  </div>
+  <div class="bm_right">
+    <div class="bm3"><a href="/templets/default/bm.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/bm3.gif"/></a><img src="{dede:global.cfg_templets_skin/}/images/bm2.gif"/></div>
+<div class="box_right">
+      <div class="box_tjyx">
+        <div class="title2">
+          <ul>
+            <li id="one1" onmouseover="setTab('one',1,2)" class="hover"><a href="#" >推荐院校</a></li>
+            <li id="one2" onmouseover="setTab('one',2,2)"><a href="#">热门专业</a></li>
+          </ul>
+        </div>
+        <div id="con_one_1" class="news3">
+          <ul>
+            <li><a href="/gbyx/zsjz/2014/0529/13178.html" target="_blank">上海交通大学</a></li>
+            <li><a href="/gbyx/zsjz/2014/0529/13176.html" target="_blank">华东理工大学</a></li>
+            <li><a href="/gbyx/zsjz/2014/0529/13175.html" target="_blank">复旦大学</a></li>
+            <li><a href="/gbyx/zsjz/2014/0529/13172.html" target="_blank">华东师范大学</a></li>
+            <li><a href="/gbyx/zsjz/2014/0529/13171.html" target="_blank">北京理工大学</a></li>
+            <li><a href="/gbyx/zsjz/2014/0529/13170.html" target="_blank">浙江大学</a></li>
+            <li><a href="/gbyx/zsjz/2014/0529/13177.html" target="_blank">合肥工业大学</a></li>
+            <li><a href="/gbyx/zsjz/2014/0529/13174.html" target="_blank">中南财经政法大学</a></li>
+            <li><a href="/zwlx/zsjz/2014/0529/13189.html" target="_blank">中国人民大学</a></li>
+            <li><a href="/gbyx/zsjz/2014/0529/13163.html" target="_blank">同济大学</a></li>
+          </ul>
+        </div>
+        <div id="con_one_2" class="news3" style=" display:none;">
+          <ul>
+        {dede:tag row='10' getall='1' sort='hot'}
+		<li><a href='[field:link /]'>[field:tag /]</a></li>
+	{/dede:tag}
+          </ul>
+        </div>
+      </div>
+      <div class="box_zxbm">
+        <div class="box_zxbm_title"><span><a href="/templets/default/bm.html" target="_blank">我要报名</a></span><b>在线报名实录</b></div>
+        <div class="box_zxbm_c">
+          <div id="colee" style="overflow:hidden;height:122px;margin-left:15px;margin-bottom:10px;line-height:26px;">
+            <ul>
+              <li><span >韩**报读</span>交通大学工业自动化</li>
+              <li><span >萧**报读</span>华东理工大学商务管理</li>
+              <li><span >孙*报读</span>复旦大学行政管理</li>
+              <li><span >刘**报读</span>师范大学教育经济管理</li>
+              <li><span >李*报读</span>首都经济贸易大学人管理</li>
+              <li><span >张**报读</span>天津大学建筑与土木工程硕士</li>
+              <li><span >刘**报读</span>华东师范大学学前教育</li>
+              <li><span >李*报读</span>北京理工大学计算机信息管理</li>
+              <li><span >涂**报读</span>浙江大学机械工程及自动化</li>
+              <li><span >郭*报读</span>合肥工业大学艺术设计</li>
+              <li><span >林**报读</span>中南财经大学国际政治</li>
+              <li><span >刘**报读</span>中央名族大学国际贸易</li>
+              <li><span >刘*报读</span>上海商学院金融管理</li>
+              <li><span >陶**报读</span>大连理工大学商务英语</li>
+            </ul>
+          </div>
+          <script type="text/javascript">
+			var scrollnews = document.getElementById('colee');
+			var lis = scrollnews.getElementsByTagName('li');
+			var ml = 0;
+			//欢迎来到站长特效网，我们的网址是www.zzjs.net，很好记，zz站长，js就是js特效，本站收集大量高质量js代码，还有许多广告代码下载。
+			var timer1 = setInterval(function(){
+				var liHeight = lis[0].offsetHeight;
+				var timer2 = setInterval(function(){
+				 scrollnews.scrollTop = (++ml);
+				 if(ml == liHeight){
+					clearInterval(timer2);
+					scrollnews.scrollTop = 0;
+					ml = 0;
+					lis[0].parentNode.appendChild(lis[0]);
+				 }
+			  },10);
+			},800);
+			</script>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="clear"></div>
+</div>
+
+
+
+<div class="cgyx">
+  <div class="cgyx_tu"><a href="/daquan/"><img src="{dede:global.cfg_templets_skin/}/images/1_10.gif"></div>
+  <div class="cgyx_wz">
+	{dede:channel typeid="63" row='32' type='son'}
+		<a href='[field:typelink /]'>[field:typename/]</a>
+	{/dede:channel}
+    <!--p><a href="#">内蒙古</a>|<a href="#">甘肃</a>|<a href="#">福建</a>|<a href="#">海南</a>| <a href="#">西藏</a>|<a href="#">辽宁</a>|<a href="#">吉林</a>|<a href="#">黑龙江</a>|<a href="#">宁夏</a>|<a href="#">陕西</a>|<a href="#">贵州</a>|<a href="#">云南</a>|<a href="#">广东</a>|<a href="#">江西</a>|<a href="#">新疆</a></p>
+    <p><a href="#">北京</a>|<a href="#">天津</a>|<a href="#">上海</a>|<a href="#">重庆</a>|<a href="#">河南</a>|<a href="#">山东</a>|<a href="#">山西</a>|<a href="#">江苏</a>|<a href="#">浙江</a>|<a href="#">湖北</a>|<a href="#">湖南</a>|<a href="#">广西</a>|<a href="#">四川</a> |<a href="#">青海</a>|<a href="#">安徽</a></p-->
+  </div>
+</div>
+<div class="fxx">
+  <div class="fxx_tu"><a href="#"><img src="{dede:global.cfg_templets_skin/}/images/1_11.gif"></a></div>
+  <div class="fxx_wz"><a href="/gzzk/zsjz/2014/0430/11953.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/z24.gif"/></a>
+                      <a href="/gzzk/zsjz/2014/0430/11954.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/z25.gif"/></a>
+					  <a href="/gzzk/zsjz/2014/0430/11955.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/z26.gif"/></a>
+					  <a href="/gzzk/zsjz/2014/0430/11956.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/z27.gif"/></a>
+					  <a href="/gzzk/zsjz/2014/0430/11957.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/z28.gif"/></a>
+					  <a href="/gzzk/zsjz/2014/0430/11958.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/z29.gif"/></a>
+					  <a href="/gzzk/zsjz/2014/0430/11959.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/z30.gif"/></a>
+					  <a href="/gzzk/zsjz/2014/0430/11960.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/z31.gif"/></a>
+					  <a href="/gzzk/zsjz/2014/0430/11961.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/z32.gif"/></a>
+					  <a href="/gzzk/zsjz/2014/0504/11962.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/z33.gif"/></a>
+					  <a href="/gzzk/zsjz/2014/0504/11963.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/z34.gif"/></a>
+					  <a href="/gzzk/zsjz/2014/0504/11964.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/z35.gif"/></a>
+					  <a href="/gzzk/zsjz/2014/0504/11965.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/z36.gif"/></a>
+					  <a href="/templets/default/bm.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/bmdh.gif"/></a></div></div>
+<div class="fxx">
+  <div class="fxx_tu"><a href="#"><img src="{dede:global.cfg_templets_skin/}/images/1_12.gif" /></a></div>
+  <div class="fxx_wz"><a href="/gzzk/zsjz/2014/0504/11966.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/z11.gif"/></a>
+                      <a href="/gzzk/zsjz/2014/0504/11967.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/z12.gif"/></a>
+					  <a href="/gzzk/zsjz/2014/0504/11968.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/z13.gif"/></a>
+					  <a href="/gzzk/zsjz/2014/0504/11969.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/z14.gif"/></a>
+					  <a href="/gzzk/zsjz/2014/0504/11970.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/z15.gif"/></a>
+					  <a href="/gzzk/zsjz/2014/0506/11981.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/z16.gif"/></a>
+					  <a href="/gzzk/zsjz/2014/0506/11982.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/z17.gif"/></a>
+					  <a href="/gzzk/zsjz/2014/0506/11983.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/z18.gif"/></a>
+					  <a href="/gzzk/zsjz/2014/0506/11974.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/z19.gif"/></a>
+					  <a href="/gzzk/zsjz/2014/0506/11975.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/z20.gif"/></a>
+					  <a href="/gzzk/zsjz/2014/0506/11978.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/z21.gif"/></a>
+					  <a href="/gzzk/zsjz/2014/0506/11979.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/z22.gif"/></a>
+					  <a href="/gzzk/zsjz/2014/0506/11980.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/z23.gif"/></a>
+					  <a href="/templets/default/bm.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/bmdh.gif"/></a></div>
+</div>
+<div class="box_banner"><a href="/zhongbo/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/box_banner02_2.jpg"/></a></div>
+<!--div class="topbar" style="height:80px;">
+<a href="http://www.gaokaoinfo.cn/zhiyuantianbao/" target="_blank">
+<embed type="application/x-shockwave-flash" src="/flash/bmban.swf" height="80" width="960" wmode="opaque">
+</embed>
+<!--img src="{dede:global.cfg_templets_skin/}/images/pinggubanner.gif"></a>
+</div-->
+
+<div class="box">
+  <div class="box_left2">
+    <div class="title3"><b>推荐院校</b></div>
+    <div class="box_left2_c">
+      <div class="box_left2_tu">
+        <div class="box_left2_img"><a href="/zhongbo/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/tjyx_zb.gif"/></a></div>
+        <div class="box_left2_wz">
+        <h1><a href="/zhongbo/" target="_blank">上海中博学院</a></h1>
+        上海规模最大，师资最强的本科自主招生院校...<br />
+<span><a href="/zhongbo/" target="_blank">招生简章</a>　<a href="/templets/default/bm.html" target="_blank">在线报名</a></span></div>
+      </div>
+      <div class="box_left2_tu">
+        <div class="box_left2_img"><a href="/gbyx/zsjz/2014/0529/13167.html
+" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/tjyx_02.gif"/></a></div>
+        <div class="box_left2_wz">
+          <h1><a href="/gbyx/zsjz/2014/0529/13167.html
+" target="_blank">中央民族大学</a></h1>
+          民大顶尖专业是民族学与历史学，其法学排名在全国前30...<br />
+          <span><a href="/gbyx/zsjz/2014/0529/13167.html
+" target="_blank">招生简章</a>　<a href="/templets/default/bm.html" target="_blank">在线报名</a></span></div>
+      </div>
+      <div class="box_left2_tu">
+        <div class="box_left2_img"><a href="/gbyx/zsjz/2014/0529/13165.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/tjyx_03.gif"/></a></div>
+        <div class="box_left2_wz">
+          <h1><a href="/gbyx/zsjz/2014/0529/13165.html" target="_blank">首都师范科得学院</a></h1>
+          学校不断更新教育观念，培养创新人才，国际化进程不断深...<br />
+          <span><a href="/gbyx/zsjz/2014/0529/13165.html" target="_blank">招生简章</a>　<a href="/templets/default/bm.html" target="_blank">在线报名</a></span></div>
+      </div>
+      <div class="box_left2_tu">
+        <div class="box_left2_img"><a href="/gbyx/zsjz/2014/0509/12165.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/tjyx_04.gif"/></a></div>
+        <div class="box_left2_wz">
+          <h1><a href="/gbyx/zsjz/2014/0509/12165.html" target="_blank">上海思博技术学院</a></h1>
+          办学条件优越，教学资源丰富，民办全日制普通高等学校...<br />
+          <span><a href="/gbyx/zsjz/2014/0509/12165.html" target="_blank">招生简章</a>　<a href="/templets/default/bm.html" target="_blank">在线报名</a></span></div>
+      </div>
+      <div class="box_left2_tu">
+        <div class="box_left2_img"><a href="/gbyx/zsjz/2014/0509/12168.html
+" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/tjyx_05.gif"/></a></div>
+        <div class="box_left2_wz">
+          <h1><a href="/gbyx/zsjz/2014/0509/12168.html
+" target="_blank">上海商学院</a></h1>
+          专业热门，学校就业率很高，教学质量极高，校风稳健发展...<br />
+          <span><a href="/gbyx/zsjz/2014/0509/12168.html
+" target="_blank">招生简章</a>　<a href="/templets/default/bm.html" target="_blank">在线报名</a></span></div>
+      </div>
+      <div class="box_left2_tu">
+        <div class="box_left2_img"><a href="/gbyx/zsjz/2014/0529/13173.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/tjyx_06.gif"/></a></div>
+        <div class="box_left2_wz">
+          <h1><a href="/gbyx/zsjz/2014/0529/13173.html" target="_blank">上海海事学院</a></h1>
+          以军民共建为载体，携手促发展，双拥共建创辉煌的良好局...<br />
+          <span><a href="/gbyx/zsjz/2014/0529/13173.html" target="_blank">招生简章</a>　<a href="/templets/default/bm.html" target="_blank">在线报名</a></span></div>
+      </div>
+      <div class="box_left2_tu">
+        <div class="box_left2_img"><a href="/gbyx/zsjz/2014/0529/13164.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/tjyx_07.gif"/></a></div>
+        <div class="box_left2_wz">
+          <h1><a href="/gbyx/zsjz/2014/0529/13164.html" target="_blank">陕西师范大学</a></h1>
+          以教师教育为特色的综合性大学，学校非常重视师范生免费...<br />
+          <span><a href="/gbyx/zsjz/2014/0529/13164.html" target="_blank">招生简章</a>　<a href="/templets/default/bm.html" target="_blank">在线报名</a></span></div>
+      </div>
+      <div class="box_left2_tu">
+        <div class="box_left2_img"><a href="/gbyx/zsjz/2014/0509/12180.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/tjyx_08.gif"/></a></div>
+        <div class="box_left2_wz">
+          <h1><a href="/gbyx/zsjz/2014/0509/12180.html" target="_blank">大连理工大学</a></h1>
+          985院校，机械自动化是主打专业，毕业生专业对口，就业率...<br />
+          <span><a href="/gbyx/zsjz/2014/0509/12180.html" target="_blank">招生简章</a>　<a href="/templets/default/bm.html" target="_blank">在线报名</a></span></div>
+      </div>
+      <div class="box_left2_tu">
+        <div class="box_left2_img"><a href="/gbyx/zsjz/2014/0529/13169.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/tjyx_09.gif"/></a></div>
+        <div class="box_left2_wz">
+          <h1><a href="/gbyx/zsjz/2014/0529/13169.html" target="_blank">北京石油化工学院</a></h1>
+          改革与发展取得了显著成绩，先后荣获北京市产学研先进...<br />
+          <span><a href="/gbyx/zsjz/2014/0529/13169.html" target="_blank">招生简章</a>　<a href="/templets/default/bm.html" target="_blank">在线报名</a></span></div>
+      </div>
+      <div class="box_left2_tu">
+        <div class="box_left2_img"><a href="/gbyx/zsjz/2014/0529/13166.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/tjyx_10.gif"/></a></div>
+        <div class="box_left2_wz">
+          <h1><a href="/gbyx/zsjz/2014/0529/13166.html" target="_blank">北京大学</a></h1>
+          强大学术支持，雄厚师资力量，良好社会口碑，完善就业...<br />
+          <span><a href="/gbyx/zsjz/2014/0529/13166.html" target="_blank">招生简章</a>　<a href="/templets/default/bm.html" target="_blank">在线报名</a></span></div>
+      </div>
+    </div>
+  </div>
+  <div class="box_right">
+    <div class="kjck">
+      <div class="title4">上大学六大途径</div>
+      <div class="kjck_c">
+        <ul>
+          <li><a href="/gbyx" target="_blank">公办院校</a></li>
+          <li><a href="/mbyx" target="_blank">民办院校</a></li>
+          <li><a href="/jhwzs" target="_blank">计划外招生</a></li>
+          <li><a href="/zkyx" target="_blank">自考院校</a></li>
+          <li><a href="/gzzk" target="_blank">高职专科</a></li>
+          <li><a href="/zwlx" target="_blank">中外合作留学</a></li>
+        </ul>
+  <div class="clear"></div>
+      </div>
+    </div>
+    <div class="kjck_tu"><a href="/luobang/
+" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/tj_02.gif" width="231" height="68"/></a></div>
+    <div id="xlwb">
+      <div class="title44">快速咨询</div>
+      <div class="xlwb_c">
+		<div class="df_bklc">
+			<form action="/plus/diy.php" enctype="multipart/form-data" method="post" onsubmit="return check_submit();">
+			<input type="hidden" name="action" value="post">
+			<input type="hidden" name="diyid" value="7">
+			<input type="hidden" name="do" value="2">
+			<table style="width:97%;" cellpadding="0" cellspacing="1">
+			  <tbody><tr><td height="25" colspan="3" valign="top"><b style="font-size:14px; line-height:20px;color:red">请在此提交您想咨询的问题,我们将在五分钟内与您取得联系并提供详细解答,或致电4006-150-114</b></td></tr>
+			  <tr>
+			  <td width="24%" height="23" align="center" valign="middle"></td>
+			</td>
+			</tr>
+			  
+			<tr>
+
+			  <td width="24%" height="23" align="center" valign="middle">姓&nbsp;&nbsp;&nbsp;名：</td>
+			  <td width="76%" height="23" align="center"><input type="text" name="yx" id="yx" class="intxt" value="" style="border:1px solid #d0d1cc;width:173px;height:17px;padding-left:5px;">
+			</td>
+			</tr>
+			<tr>
+			  <td height="23" align="center" valign="middle" style="color:#F00">电&nbsp;&nbsp;&nbsp;话：</td>
+			  <td height="23" align="center"><input type="text" name="sj" id="sj" style="border:1px solid #d0d1cc;width:173px;height:17px;padding-left:5px;" class="intxt" value="">
+			</td>
+			</tr>
+			<tr>
+			  <td height="23" align="center" valign="middle">身&nbsp;份&nbsp;证：</td>
+			  <td height="23" align="center"><input type="text" name="yx1" id="yx1" style="border:1px solid #d0d1cc;width:173px;height:17px;padding-left:5px;" class="intxt" value="">
+			</td>
+			</tr>
+			<tr>
+			  <td height="74" align="center" valign="top" style="color:#F00; padding-top:6px">内&nbsp;&nbsp;&nbsp;容：</td>
+			  <td height="74" align="center"><textarea name="ly" id="ly" style="width:173px;height:70px; border:1px #cccccc solid;"></textarea>
+			</td>
+			</tr>
+			<input name="shijian_c" value="2014年6月27日15时17分" type="hidden" id="shijian_c" style="width:250px" class="intxt"> 
+									<script type="text/javascript">document.getElementById("shijian_c").value=new Date().getFullYear()+'年'+(new Date().getMonth()+1)+'月'+new Date().getDate()+'日'+new Date().getHours()+'时'+new Date().getMinutes()+'分'</script>
+
+			<input type="hidden" name="dede_fields" value="yx,text;sj,text;yx1,text;ly,multitext;shijian_c,text">
+			<input type="hidden" name="dede_fieldshash" value="1d3815589b9657847cfaf642b7cfca07"></tbody></table>
+			<div align="center" style="height:20px;padding-top:10px; padding-left:30px">
+			<input name="validate" type="text" id="vdcode" style="text-transform:uppercase;" size="8">
+			<img id="vdimgck" align="absmiddle" onclick="this.src=this.src+'?'" style="cursor: pointer;" alt="看不清？点击更换" src="/include/vdimgck.php"></div>
+			<div align="center" style="height:48px;padding-top:10px; padding-left:30px">
+			<input type="image" src="/templets/default/images/1_40.gif" name="submit" value="提 交" class="coolbg">
+			&nbsp;
+			<input type="image" src="/templets/default/images/1_41.gif" name="reset" value="重 置" class="coolbg">
+			</div>
+			</form>
+        <div class="clear"></div>
+      </div>
+        <!--iframe width="230" height="327" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=230&height=327&fansRow=2&ptype=1&speed=100&skin=5&isTitle=1&noborder=0&isWeibo=1&isFans=0&uid=3216127045&verifier=96db5f6b&dpc=1"></iframe-->
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<div class="box_banner"><img src="{dede:global.cfg_templets_skin/}/images/box_banner01.gif"/></div>
+<!--div class="box_banner"><a href="http://www.zhongboedu.com" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/box_banner02.jpg"/></a></div-->
+<div class="box">
+  <div class="box_left2">
+    <div class="jhwyx">
+      <div class="title3"><b>计划外招生院校</b></div>
+      <div class="jhwyx_c">
+        <div class="jhwyx_c1">
+          <div class="jhwyx_tu">
+            <div class="jhwyx_img"><a href="/jhwzs/zsjz/2013/0111/220.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/jhwyx_01.gif"/></a></div>
+            <div class="jhwyx_img2"><a href="/jhwzs/zsjz/2013/0111/235.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/jhwyx_03.gif"/></a></div>
+          </div>
+          <div class="jhwyx_news">
+            <ul>
+              <li><a href="/jhwzs/zsjz/2014/0509/12198.html" target="_blank">上海青年管理干部学院2014招生</a></li>
+              <li><a href="/jhwzs/zsjz/2014/0509/12200.html" target="_blank">上海中侨职业技术学院2014招生</a></li>
+              <li><a href="/jhwzs/zsjz/2014/0509/12207.html" target="_blank">上海欧华职业技术学院2014招生</a></li>
+              <li><a href="/jhwzs/zsjz/2014/0509/12209.html" target="_blank">中央财经大学2014招生简章</a></li>
+              <li><a href="/jhwzs/zsjz/2014/0509/12218.html" target="_blank">
+			  北京人文大学2014招生简章</a></li>
+              <li><a href="/jhwzs/zsjz/2014/0526/12708.html" target="_blank">北京理工大学2014招生简章</a></li>
+              <li><a href="/jhwzs/zsjz/2014/0509/12233.html" target="_blank">武汉理工大学2014招生简章</a></li>
+              <li><a href="/jhwzs/zsjz/2014/0509/12235.html" target="_blank">上海视觉艺术学院2014招生简章</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="jhwyx_c1">
+          <div class="jhwyx_tu">
+            <div class="jhwyx_img"><a href="/jhwzs/zsjz/2013/0111/227.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/jhwyx_02.gif"/></a></div>
+            <div class="jhwyx_img2"><a href="/mbyx/zsjz/2013/0111/238.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/jhwyx_04.gif"/></a></div>
+          </div>
+          <div class="jhwyx_news">
+            <ul>
+              <li><a href="/jhwzs/zsjz/2014/0509/12238.html" target="_blank">中国传媒大学2014年招生章程
+</a></li>
+              <li><a href="/mbyx/zsjz/2014/0522/12440.html" target="_blank">九江职业技术学院2014年招生简章</a></li>
+              <li><a href="/mbyx/zsjz/2014/0526/12704.html" target="_blank">上海华文进修学院2014年招生</a></li>
+              <li><a href="/mbyx/zsjz/2014/0522/12456.html" target="_blank">河南科技专修学院2014年招生简章</a></li>
+              <li><a href="/mbyx/zsjz/2014/0522/12479.html" target="_blank">江西科技学院2014招生</a></li>
+              <li><a href="/mbyx/zsjz/2014/0522/12489.html" target="_blank">上海远东科技进修学院2014年招生</a></li>
+              <li><a href="/mbyx/zsjz/2014/0522/12503.html" target="_blank">新疆乌鲁木齐科信学院2014招生</a></li>
+              <li><a href="/mbyx/zsjz/2014/0522/12504.html" target="_blank">安徽新华学院2014年招生简章</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+     <div class="clear"></div>
+    </div>
+    <div class="jhwyx">
+      <div class="title5"><b>民办院校推荐</b></div>
+      <div class="jhwyx_c">
+        <div class="jhwyx_c1">
+          <div class="jhwyx_tu">
+            <div class="jhwyx_img"><a href="/mbyx/zsjz/2013/0111/230.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/jhwyx_05.gif"/></a></div>
+            <div class="jhwyx_img2"><a href="/mbyx/zsjz/2013/0111/252.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/jhwyx_07.gif"/></a></div>
+          </div>
+          <div class="jhwyx_news">
+            <ul>
+              <li><a href="mbyx/zsjz/2014/0522/12440.html" target="_blank">九江职业技术学院2014招生简章</a></li>
+              <li><a href="mbyx/zsjz/2014/0526/12724.html" target="_blank">
+			  温州大学2014自主招生</a></li>
+              <li><a href="/mbyx/zsjz/2014/0522/12510.html" target="_blank">山东协和学院2014年招生简章</a></li>
+              <li><a href="/mbyx/zsjz/2014/0522/12511.html" target="_blank">浙江宇翔专修学院2014招生简章</a></li>
+              <li><a href="/mbyx/zsjz/2014/0522/12512.html" target="_blank">浙江宁波交通职业技术学院招生简章</a></li>
+              <li><a href="/mbyx/zsjz/2014/0522/12513.html" target="_blank">
+			  山东英才学院2014招生简章</a></li>
+              <li><a href="/mbyx/zsjz/2014/0526/12728.html" target="_blank">温州职业技术学院2014招生简章</a></li>
+              <li><a href="/mbyx/zsjz/2014/0522/12529.html" target="_blank">南京财经大学2014自主招生简章</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="jhwyx_c1">
+          <div class="jhwyx_tu">
+            <div class="jhwyx_img"><a href="/mbyx/zsjz/2013/0111/247.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/jhwyx_06.gif"/></a></div>
+            <div class="jhwyx_img2"><a href="/mbyx/zsjz/2013/0111/243.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/jhwyx_08.gif"/></a></div>
+          </div>
+          <div class="jhwyx_news">
+            <ul>
+              <li><a href="/mbyx/zsjz/2014/0522/12537.html" target="_blank">安徽中澳职业技术学院招生简章</a></li>
+              <li><a href="mbyx/zsjz/2014/0522/12540.html" target="_blank">西安建设科技学院2014招生简章</a></li>
+              <li><a href="/mbyx/zsjz/2014/0522/12542.html" target="_blank">
+			  浙江之江学院2014招生简章</a></li>
+              <li><a href="/mbyx/zsjz/2014/0522/12545.html " target="_blank">浙江江南专修学院2014招生简章</a></li>
+              <li><a href="/mbyx/zsjz/2014/0522/12553.html" target="_blank">
+			  浙江建仁学院2014招生简章</a></li>
+              <li><a href="/mbyx/zsjz/2014/0522/12557.html" target="_blank">
+			  郑州文理学院2014招生简章</a></li>
+              <li><a href="/mbyx/zsjz/2014/0522/12562.html" target="_blank">山东潍坊科技职业技术学院招生简章</a></li>
+              <li><a href="/mbyx/zsjz/2014/0522/12563.html" target="_blank">浙江三联专修学院2014招生简章</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="box_right">
+    <div class="kjck">
+      <div class="title4">高考快捷服务</div>
+      <div class="kjck_c">
+        <ul>
+          <li><a href="http://www.gaokaoinfo.cn/templets/default/bm.html" target="_blank">填报志愿</a></li>
+          <li><a href="http://edu.sina.com.cn/gaokao/2012-06-06/1752341284.shtml" target="_blank">高考成绩查询</a></li>
+          <li><a href="http://www.gaokao.com/z2012/2012gdfsx" target="_blank">各省录取线 </a></li>
+          <li><a href="/bkzn" target="_blank">报考指南</a></li>
+          <li><a href="/plus/list.php?tid=24" target="_blank">政策动态</a></li>
+          <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2562177520&site=qq&menu=yes">在线咨询</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="kjck_tu"><a href="/gbyx/zsjz/2013/0111/209.html
+" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/tj_01.gif" width="231" height="68"/></a></div>
+    <div id="xlwb2">
+      <div class="title44">高校排行榜</div>
+      <div class="gxphb">
+        <div class="title6">
+          <ul>
+            <li id="two1" onmouseover="setTab('two',1,2)" class="hover"><a href="#" >院校排行</a></li>
+            <li id="two2" onmouseover="setTab('two',2,2)"><a href="#">专业排行</a></li>
+          </ul>
+        </div>
+        <div id="con_two_1" class="news4">
+       <ul>
+      	    <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/gbyx/zsjz/2014/0529/13178.html" target="_blank">上海交通大学</a></li>
+		    <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/gbyx/zsjz/2014/0529/13176.html" target="_blank">华东理工大学</a></li>
+		    <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/gbyx/zsjz/2014/0529/13175.html" target="_blank">复旦大学</a></li>
+		     <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/gbyx/zsjz/2014/0529/13172.html" target="_blank">华东师范大学</a></li>
+		    <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/gbyx/zsjz/2014/0529/13171.html" target="_blank">北京理工大学</a></li>
+		    <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/gbyx/zsjz/2014/0529/13170.html" target="_blank">浙江大学</a></li>
+             <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/gbyx/zsjz/2014/0529/13177.html" target="_blank">合肥工业大学</a></li>
+		    <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/gbyx/zsjz/2014/0529/13174.html" target="_blank">中南财经政法大学</a></li>
+		    <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/gbyx/zsjz/2014/0509/12168.html" target="_blank">上海商学院</a></li>
+            <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/gbyx/zsjz/2014/0529/13163.html" target="_blank">同济大学</a></li>
+	  </ul>
+      </div>
+      
+      <div id="con_two_2" class="news4" style="display:none;">
+       <ul>
+      	    <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/tags.php?/金融学/" target="_blank">金融学</a></li>
+		    <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/tags.php?/经济学/" target="_blank">经济学</a></li>
+		    <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/tags.php?/国际贸易/"  target="_blank">国际贸易</a></li>
+		     <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/tags.php?/机电工程/" target="_blank">机电工程</a></li>
+		    <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/tags.php?/商务管理/" target="_blank">商务管理</a></li>
+		    <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/tags.php?/行政管理/" target="_blank">行政管理</a></li>
+             <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/tags.php?/艺术设计/" target="_blank">艺术设计</a></li>
+		    <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/tags.php?/治安学/" target="_blank">治安学</a></li>
+		    <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/tags.php?/电子商务/" target="_blank">电子商务</a></li>
+            <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/tags.php?/逻辑学/" target="_blank">逻辑学</a></li>
+	  </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<div class="box_banner"><a href="/luobang/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/box_banner06.gif" /></a></div>
+<div class="box">
+  <div class="box_left2">
+    <div class="title3"><b>高考落榜生四大出路</b></div>
+    <div class="zmdt_c22">
+      <div class="sdcl_left">
+        <div class="sdcl_left_c">
+          <div class="sdcl_left_c_tu"><a href="/zkyx" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/l_01.gif"/></a></div>
+          <div class="sdcl_left_wz">
+            <p><b>特点：</b> "宽进严出"、学习方式灵活 </p>
+            <p>           不受限制。 </p>
+            <p><br />
+              <b>对象：</b> 家庭经济条件一般、有坚定成</p>
+            <p>           才目标和学习毅力的考生。</p>
+          </div>
+        </div>
+        <div class="sdcl_news">
+          <ul>
+          {dede:arclist typeid='14' titlelen='40' row='4'}
+            <li><span>[field:pubdate function=MyDate('m-d',@me)/]</span><a href="[field:arcurl /]" target="_blank">[field:title /]</a></li>
+            {/dede:arclist}
+          </ul>
+        </div>
+      </div>
+      <div class="sdcl_right">
+        <div class="sdcl_left_c">
+          <div class="sdcl_left_c_tu"><a href="/mbyx" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/l_02.gif"/></a></div>
+          <div class="sdcl_left_wz">
+            <p><b>特点：</b>开设专业以应用型、职业型为</p>
+            <p>           主，适应性强。</p>
+            <p><br />
+            <b>对象：</b> 高考分数不太低，家庭条件较</p>
+            <p>           好，在某些方面有特长的学生</p>
+          </div>
+        </div>
+        <div class="sdcl_news">
+          <ul>
+          {dede:arclist typeid='10' titlelen='40' row='4'}
+            <li><span>[field:pubdate function=MyDate('m-d',@me)/]</span><a href="[field:arcurl /]" target="_blank">[field:title /]</a></li>
+            {/dede:arclist}
+          </ul>
+        </div>
+      </div>
+<div class="clear"></div> 
+    </div>
+    <div class="zmdt_c222">
+      <div class="sdcl_left">
+        <div class="sdcl_left_c">
+          <div class="sdcl_left_c_tu"><a href="/jhwzs" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/l_03.gif"/></a></div>
+          <div class="sdcl_left_wz">
+            <p><b>特点：</b> 严进宽出，基本上能考上所报</p>
+            <p>           学校的,认真学习就能毕业。</p>
+            <p><br />
+              <b>对象：</b> 学习潜力较大，家庭经济并不   </p>
+            <p>           宽裕的考生。</p>
+          </div>
+        </div>
+        <div class="sdcl_news">
+          <ul>
+          {dede:arclist typeid='12' titlelen='40' row='4'}
+            <li><span>[field:pubdate function=MyDate('m-d',@me)/]</span><a href="[field:arcurl /]" target="_blank">[field:title /]</a></li>
+             {/dede:arclist}
+          </ul>
+        </div>
+      </div>
+      <div class="sdcl_right">
+        <div class="sdcl_left_c">
+          <div class="sdcl_left_c_tu"><a href="/zwlx" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/l_04.gif"/></a></div>
+          <div class="sdcl_left_wz">
+            <p><b>特点：</b>能让落榜生有正式的大学可读</p>
+            <p>          而且可以选择喜欢的专业。</p>
+            <p><br />
+              <b>对象：</b> 家庭经济条件殷实、生活自理</p>
+            <p>          能力较强的考生。</p>
+          </div>
+        </div>
+        <div class="sdcl_news">
+          <ul>
+          {dede:arclist typeid='18' titlelen='40' row='4'}
+            <li><span>[field:pubdate function=MyDate('m-d',@me)/]</span><a href="[field:arcurl /]" target="_blank">[field:title /]</a></li>
+             {/dede:arclist}
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+<div class="clear"></div>
+  </div>
+  <div class="box_right">
+    <div class="xlwb3">
+      <div class="box_tjyx2">
+        <div class="title2">
+          <ul>
+            <li id="three1" onmouseover="setTab('three',1,2)" class="hover"><a href="/xyfg" target="_blank">校园风光</a></li>
+            <li id="three2" onmouseover="setTab('three',2,2)"><a href="/xsgy" target="_blank">学生感言</a></li>
+          </ul>
+        </div>
+        <div id="con_three_1" class="news6">
+        {dede:arclist titlelen='20' row='8' typeid='21'} 
+          <div class="xsgy_tu"><a href="[field:arcurl /]"><img src="[field:litpic/]" width="105px" height="78px"/></a><span><a href="[field:arcurl /]">[field:title /]</a></span></div>
+           {/dede:arclist} 
+        </div>
+        <div id="con_three_2" class="sdcl_news2" style=" display:none;">
+        <ul>   
+              {dede:arclist titlelen='42' row='17' typeid='22'}   
+       		  <li><a href="[field:arcurl /]">[field:title /]</a></li>
+              {/dede:arclist} 
+          </ul>
+        </div>
+<div class="clear"></div>
+      </div>
+<div class="clear"></div>
+    </div>
+    <div class="kjck_tu"><a href="/zwlx/zsjz/2013/0115/407.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/tj_03.gif" width="231" height="68"/></a></div>
+  </div>
+  <div class="clear"></div>
+</div>
+<div class="box_banner">
+<div class="box_banner_left"><a href="/zhongbo/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/box_banner04.gif" /></a></div>
+<div class="box_banner_right"><a href="/zhongbo/" target="_blank" ><img src="{dede:global.cfg_templets_skin/}/images/box_banner05.gif"/></a></div>
+<div class="clear"></div>
+</div>
+<div class="box2">
+  <div class="dxsh">
+    <div class="title3"><b>大学生活</b></div>
+    <div class="box_left2_c">
+      <div class="dxsh_left">
+        <div class="dxsh_left_title">2014年中国优秀高校推荐大全推荐</div>
+        {dede:arclist titlelen='28' row='1' flag='p' infolen='96' typeid='40'}
+        <div class="dxsh_left_c">
+          <div class="dxsh_left_tu"><a href="[field:arcurl /]" target="_blank"><img src="[field:litpic/]" width="91" height="87"/></a></div>
+          <div class="dxsh_left_top"><b>[field:title/]</b> [field:info/]...<a href="[field:arcurl /]" target="_blank">[详细] </a></div>
+        </div>
+         {/dede:arclist}
+        <div class="dxsh_news">
+            <ul>
+            {dede:arclist typeid='40' titlelen='42' row='4'}
+              <li><span>[field:pubdate function=MyDate('m-d',@me)/]</span><a href="[field:arcurl /]" target="_blank">[field:title /]</a></li>
+              {/dede:arclist}
+            </ul>
+          </div>
+      </div>
+      <div class="dxsh_center">
+        <div class="dxsh_title"><a href="/dxsh/shfx" target="_blank"><span>更多>></span></a><b>大学生活分享</b></div>
+        <div class="dxsh_news">
+          <ul>
+          {dede:arclist typeid='34' titlelen='40' row='8'}
+            <li><a href="[field:arcurl /]" target="_blank">[field:title /]</a></li>
+            {/dede:arclist}
+          </ul>
+        </div>
+      </div>
+      <div class="dxsh_right">
+      {dede:arclist titlelen='26' row='6' typeid='41'}
+        <div class="dxsh_tu"><a href="[field:arcurl /]" target="_blank"><img src="[field:litpic/]" width="120" height="89"/></a><span><a href="[field:arcurl /]" target="_blank">[field:title/]</a></span>
+        </div>
+        {/dede:arclist}
+
+  <div class="clear"></div>    
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<div class="box_banner"><a href="/luobang/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/box_banner03.gif"/></a></div>
+<div class="box2">
+  <div class="dxsh">
+    <div class="title3"><b>资讯动态</b></div>
+    <div class="zmdt_c">
+      <div class="dt_left">
+        <div class="title7">
+          <ul>
+            <li id="fourth1" onmouseover="setTab('fourth',1,2)" class="hover"><a href="/zcdt/zxzx/yw" target="_blank" >高考要闻</a></li>
+            <li id="fourth2" onmouseover="setTab('fourth',2,2)"><a href="/zcdt/zxzx/gkkx" target="_blank">高考快讯</a></li>
+          </ul>
+        </div>
+        <div id="con_fourth_1" class="title7_c">
+         {dede:arclist titlelen='50' row='1' flag='c' infolen='110' typeid='44'}
+           <div class="title7_c1">
+            <div class="title7_c1_tu"><a href="[field:arcurl /]"><img src="[field:litpic/]" width="130" height="75"/></a></div>
+            <div class="title7_c1_c"><b><a href="[field:arcurl /]">[field:title/]</a></b>[field:info/]...<a href="[field:arcurl /]">[详细]</a></div>
+          </div>
+           {/dede:arclist}
+          <div class="sdcl_news">
+            <ul>
+            {dede:arclist typeid='44' titlelen='68' row='6'}
+              <li><span>[field:pubdate function=MyDate('m-d',@me)/]</span><a href="[field:arcurl /]" target="_blank">[field:title/]</a></li>
+              {/dede:arclist}
+            </ul>
+          </div>
+          
+        </div>
+        <div id="con_fourth_2" class="title7_c" style="display:none;">
+        {dede:arclist titlelen='40' row='1' flag='c' infolen='110' typeid='45'}
+          <div class="title7_c1">
+            <div class="title7_c1_tu"><a href="[field:arcurl /]" target="_blank"><img src="[field:litpic/]" width="130" height="75"/></a></div>
+            <div class="title7_c1_c"><b><a href="[field:arcurl /]" target="_blank">[field:title/]</a></b>[field:info/]...<a href="[field:arcurl /]" target="_blank">[详细]</a></div>
+          </div>
+           {/dede:arclist}
+          <div class="sdcl_news">
+            <ul>
+            {dede:arclist typeid='45' titlelen='68' row='6'}
+              <li><span>[field:pubdate function=MyDate('m-d',@me)/]</span><a href="[field:arcurl /]" target="_blank">[field:title/]</a></li>
+              {/dede:arclist}
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="dt_right">
+        <div class="title8">
+          <ul>
+            <li id="fifth1" onmouseover="setTab('fifth',1,2)" class="hover"><a href="/zcdt/bkzn/zytb" target="_blank" >志愿填报</a></li>
+            <li id="fifth2" onmouseover="setTab('fifth',2,2)"><a href="/zcdt/bkzn/zsyx" target="_blank">招生院校</a></li>
+          </ul>
+        </div>
+        <div id="con_fifth_1" class="title7_c">
+         {dede:arclist titlelen='46' row='1' flag='c' infolen='110' typeid='46'}
+           <div class="title7_c1">
+            <div class="title7_c1_tu"><a href="[field:arcurl /]" target="_blank"><img src="[field:litpic/]" width="130" height="75"/></a></div>
+            <div class="title7_c1_c"><b><a href="[field:arcurl /]" target="_blank">[field:title/]</a></b>[field:info/]...<a href="[field:arcurl /]" target="_blank">[详细]</a></div>
+          </div>
+           {/dede:arclist}
+          <div class="sdcl_news">
+            <ul>
+            {dede:arclist typeid='46' titlelen='68' row='6'}
+              <li><span>[field:pubdate function=MyDate('m-d',@me)/]</span><a href="[field:arcurl /]" target="_blank">[field:title/]</a></li>
+              {/dede:arclist}
+            </ul>
+          </div>
+        </div>
+        <div id="con_fifth_2" class="title7_c" style="display:none;">
+        {dede:arclist titlelen='40' row='1' flag='c' infolen='110' typeid='47'}
+          <div class="title7_c1">
+            <div class="title7_c1_tu"><a href="[field:arcurl /]" target="_blank"><img src="[field:litpic/]" width="130" height="75"/></a></div>
+            <div class="title7_c1_c"><b><a href="[field:arcurl /]" target="_blank">[field:title/]</a></b>[field:info/]...<a href="[field:arcurl /]" target="_blank">[详细]</a></div>
+          </div>
+           {/dede:arclist}
+          <div class="sdcl_news">
+            <ul>
+            {dede:arclist typeid='47' titlelen='68' row='6'}
+              <li><span>[field:pubdate function=MyDate('m-d',@me)/]</span><a href="[field:arcurl /]" target="_blank">[field:title/]</a></li>
+              {/dede:arclist}
+            </ul>
+          </div>
+        </div>
+      </div>
+  <div class="clear"></div>
+    </div>
+    <div class="zmdt_c2">
+      <div class="dt_left">
+        <div class="title9">
+          <ul>
+            <li id="sixth1" onmouseover="setTab('sixth',1,2)" class="hover"><a href="/zcdt/jzbd/jzxz" target="_blank">家长须知</a></li>
+            <li id="sixth2" onmouseover="setTab('sixth',2,2)"><a href="/zcdt/jzbd/mszz" target="_blank">名师支招</a></li>
+          </ul>
+        </div>
+        <div id="con_sixth_1" class="title7_c">
+         {dede:arclist titlelen='40' row='1' flag='c' infolen='110' typeid='42'}
+           <div class="title7_c1">
+            <div class="title7_c1_tu"><a href="[field:arcurl /]" target="_blank"><img src="[field:litpic/]" width="130" height="75"/></a></div>
+            <div class="title7_c1_c"><b><a href="[field:arcurl /]" target="_blank">[field:title/]</a></b>[field:info/]...<a href="[field:arcurl /]" target="_blank">[详细]</a></div>
+          </div>
+           {/dede:arclist}
+          <div class="sdcl_news">
+            <ul>
+            {dede:arclist typeid='42' titlelen='68' row='6'}
+              <li><span>[field:pubdate function=MyDate('m-d',@me)/]</span><a href="[field:arcurl /]" target="_blank">[field:title/]</a></li>
+              {/dede:arclist}
+            </ul>
+          </div>
+          
+        </div>
+        <div id="con_sixth_2" class="title7_c" style="display:none;">
+        {dede:arclist titlelen='40' row='1' flag='c' infolen='110' typeid='43'}
+          <div class="title7_c1">
+            <div class="title7_c1_tu"><a href="[field:arcurl /]" target="_blank"><img src="[field:litpic/]" width="130" height="75"/></a></div>
+            <div class="title7_c1_c"><b><a href="[field:arcurl /]" target="_blank">[field:title/]</a></b>[field:info/]...<a href="[field:arcurl /]" target="_blank">[详细]</a></div>
+          </div>
+           {/dede:arclist}
+          <div class="sdcl_news">
+            <ul>
+            {dede:arclist typeid='43' titlelen='68' row='6'}
+              <li><span>[field:pubdate function=MyDate('m-d',@me)/]</span><a href="[field:arcurl /]">[field:title/]</a></li>
+              {/dede:arclist}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="dt_right">
+        <div class="title10">
+          <ul>
+            <li id="seven1" onmouseover="setTab('seven',1,2)" class="hover"><a href="/cjwt/wtlb" target="_blank">问题列表</a></li>
+            <li id="seven2" onmouseover="setTab('seven',2,2)"><a href="/cjwt/zysy" target="_blank">专业术语</a></li>
+          </ul>
+        </div>
+        <div id="con_seven_1" class="title7_c">
+         {dede:arclist titlelen='40' row='1' flag='c' infolen='110' typeid='50'}
+           <div class="title7_c1">
+            <div class="title7_c1_tu"><a href="[field:arcurl /]"><img src="[field:litpic/]" width="130" height="75"/></a></div>
+            <div class="title7_c1_c"><b><a href="[field:arcurl /]" target="_blank">[field:title/]</a></b>[field:info/]...<a href="[field:arcurl /]" target="_blank">[详细]</a></div>
+          </div>
+           {/dede:arclist}
+          <div class="sdcl_news">
+            <ul>
+            {dede:arclist typeid='50' titlelen='68' row='6'}
+              <li><span>[field:pubdate function=MyDate('m-d',@me)/]</span><a href="[field:arcurl /]" target="_blank">[field:title/]</a></li>
+              {/dede:arclist}
+            </ul>
+          </div>
+        </div>
+        <div id="con_seven_2" class="title7_c" style="display:none;">
+        {dede:arclist titlelen='40' row='1' flag='c' infolen='110' typeid='51'}
+          <div class="title7_c1">
+            <div class="title7_c1_tu"><a href="[field:arcurl /]" target="_blank"><img src="[field:litpic/]" width="130" height="75"/></a></div>
+            <div class="title7_c1_c"><b><a href="[field:arcurl /]" target="_blank">[field:title/]</a></b>[field:info/]...<a href="[field:arcurl /]" target="_blank">[详细]</a></div>
+          </div>
+           {/dede:arclist}
+          <div class="sdcl_news">
+            <ul>
+            {dede:arclist typeid='51' titlelen='68' row='6'}
+              <li><span>[field:pubdate function=MyDate('m-d',@me)/]</span><a href="[field:arcurl /]">[field:title/]</a></li>
+              {/dede:arclist}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<div class="box_banner"><a href="/luobang/
+" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/box_banner02.jpg"/></a></div>
+<div class="box2">
+  <div class="dxsh">
+    <div class="title3"><b>合作院校 - 友情连接</b></div>
+    <div class="box_left2_c2">
+      <div class="link_tu"><a href="http://gaokao.chsi.com.cn/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/link_01.gif"/></a><a href="http://www.chsi.com.cn/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/link_02.gif"/></a><a href="http://edu.sina.com.cn/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/link_03.gif"/></a><a href="http://edu.qq.com/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/link_04.gif"/></a><a href="http://edu.ifeng.com/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/link_05.gif"/></a><a href="http://www.chinaedu.net/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/link_06.gif"/></a><a href="http://www.21cnjy.com/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/link_07.gif"/></a><a href="http://learning.sohu.com/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/link_08.gif"/></a><a href="http://www.boee.cn/shopNew/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/link_09.gif"/></a><a href="http://www.shmec.gov.cn/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/link_10.gif"/></a></div>
+      <div class="link_c">
+ 		<ul>
+       
+  {dede:flink row='48'/}
+              
+            </ul>
+  <div class="clear"></div>
+            </div>
+
+  <div class="clear"></div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+{dede:include filename="footer.htm"/} 
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global name='keyword' function='RemoveXSS(@me)'/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_templets_skin/}/css/css.css" rel="stylesheet" type="text/css" />
+<link href="{dede:global.cfg_templets_skin/}/css/info.css" rel="stylesheet" type="text/css" />
+<link href="{dede:global.cfg_templets_skin/}/css/style.css" rel="stylesheet" type="text/css" />
+<SCRIPT LANGUAGE="JavaScript" src=http://float2006.tq.cn/floatcard?adminid=9459157&sort=0 ></SCRIPT>
+<script type="text/javascript">  
+        function $(str){  
+            return (document.getElementById(str));  
+        }  
+          
+        function check_submit(){  
+            if($("dh").value =="" || $("dh").value=="请输入电话"){  
+                alert("电话不能为空!");  
+                return false;  
+            }  
+			if($("ly").value =="" || $("ly").value=="请输入内容"){  
+                alert("内容不能为空!");  
+                return false;  
+            }  
+        }  
+          
+        function mover(){  
+            event.srcElement.focus();  
+            event.srcElement.select();  
+        }  
+          
+    </script> 
+
+</head>
+
+
+<body>
+{dede:include filename="head.htm"/}
+<div class="icon"></div>
+<div class="pindao_box">
+<div class="list_left">
+  <div class="list_c2">
+    <div class="list_bar">您现在的位置：<a href="#">首页</a> >  搜索<strong class="fc_03c">{dede:global name='keyword' function='RemoveXSS(@me)'/}</strong>的结果 </div>
+    <div class="zszz_con2">
+	<!--循环下面一段-->
+	{dede:list perpage='10' titlelen='42' }
+    <div class="pindao_rm_xxx">
+        <div class="rm_c">
+          <div class="rm_tu">[field:array runphp='yes']@me = (empty(@me['litpic']) ? "" : "<a href='{@me['arcurl']}' class='preview'><img src='{@me['litpic']}'/></a>"); [/field:array]</div>
+
+          <div class="rm_jj2"><span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></span> [field:description/]......<a href="[field:arcurl/]" target="_blank">[详细]</a></div>
+        
+        <div class="clear"></div>
+        </div>
+      </div>
+    {/dede:list}
+	  <!--循环上面一段-->
+     <!-- /分页 -->
+      <div class="fl dede_pages" style="padding-top:20px;">
+			<ul class="pagelist">
+            	{dede:pagelist listsize='4'/}  
+			</ul>
+     </div><!-- /分页 -->
+    <div class="clear"></div>
+    </div>
+    <div class="list_info_fenxiang">
+      <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare"> <a class="bds_qzone">QQ空间</a> <a class="bds_tsina">新浪微博</a> <a class="bds_tqq">腾讯微博</a> <a class="bds_renren">人人网</a> <span class="bds_more">更多</span> <a class="shareCount"></a></div>
+      <script type="text/javascript" id="bdshare_js" data="type=tools" ></script>
+      <script type="text/javascript" id="bdshell_js"></script>
+      <script type="text/javascript">
+	document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+      </script>
+      <!-- Baidu Button END -->
+    </div>
+    <div class="list_right_c">
+      <div class="list_right_title">相关阅读</div>
+      <div class="list_right_news2">
+        <ul>
+       <script src='/plus/mytag_js.php?aid=2' language='javascript'></script>
+        </ul>
+      </div>
+    </div>
+</div>
+</div>
+<div class="df_right2">
+	<div class="zszz_bm">
+	  <div class="df_bm"><img src="{dede:global.cfg_templets_skin/}/images/1_31.gif"/><span><a href="/templets/default/bm.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/1_32.gif"/><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2562177520&site=qq&menu=yes"><img src="{dede:global.cfg_templets_skin/}/images/1_33.gif"/></a></span></div>
+	</div>
+	<div class="zszz_bm2">
+      <!--div class="zszz_title"><span><a href="#">更多>></a></span><b>专业导航</b></div>
+      <div class="zszz_news">
+      <ul>
+	<script src='/plus/mytag_js.php?aid=1' language='javascript'></script>
+       <div class="clear"></div>
+      </ul>
+      </div-->
+  <div class="clear"></div>  
+	</div>
+	<div class="zszz_bm2">
+	  <div class="zszz_title"><b>在线咨询</b></div>
+      <div class="zszz_con"><form action="/plus/diy.php" enctype="multipart/form-data" method="post" onsubmit="return check_submit();">
+<input type="hidden" name="action" value="post" />
+<input type="hidden" name="diyid" value="1" />
+<input type="hidden" name="do" value="2" />
+<table style="width:97%;" cellpadding="0" cellspacing="1">
+  <tr><td height="25" colspan="3" valign="top"><b style="font-size:14px; color:#6d6d6d">我想咨询：</b></td></tr>
+<tr>
+
+  <td width="17%" height="23" align="center" valign="middle">院校：</td>
+  <td width="83%" height="23" align="center"><input type='text' name='yx' id='yx'  class='intxt' value='' style="border:1px solid #d0d1cc;width:173px;height:17px;padding-left:5px;"/>
+</td>
+</tr>
+<tr>
+  <td height="23" align="center" valign="middle" style="color:#F00">电话：</td>
+  <td height="23" align="center"><input type='text' name='dh' id='dh' style="border:1px solid #d0d1cc;width:173px;height:17px;padding-left:5px;"  class='intxt' value='' />
+</td>
+</tr>
+<tr>
+  <td height="23" align="center" valign="middle">邮箱：</td>
+  <td height="23" align="center"><input type='text' name='youxiang' id='youxiang' style="border:1px solid #d0d1cc;width:173px;height:17px;padding-left:5px;"  class='intxt' value='' />
+</td>
+</tr>
+<tr>
+  <td height="74" align="center" valign="top" style="color:#F00; padding-top:6px">内容： </td>
+  <td height="74" align="center"><textarea name='ly' id='ly' style='width:173px;height:70px; border:1px #cccccc solid;'></textarea>
+</td>
+</tr>
+<input type="hidden" name="dede_fields" value="yx,text;dh,text;youxiang,text;ly,multitext" />
+<input type="hidden" name="dede_fieldshash" value="2036dfec43cd0ebab7f6277b835e7f2b" /></table>
+<div align='center' style='height:20px;padding-top:10px; padding-left:30px'>
+<input type="image" src="{dede:global.cfg_templets_skin/}/images/1_40.gif" name="submit" value="提 交" class='coolbg' />
+ 
+<input type="image" src="{dede:global.cfg_templets_skin/}/images/1_41.gif" name="reset" value="重 置" class='coolbg' />
+</div>
+</form></div>
+      <div class="clear"></div>
+    </div>
+	<div class="zszz_bm2">
+	  <div class="zszz_title"><span><a href="#">更多>></a></span><b>报名流程</b></div>
+	  <div class="zszz_con"><img src="{dede:global.cfg_templets_skin/}/images/zs_02.gif"/></div>
+	  <div class="clear"></div>
+    </div>
+	<div class="zszz_bm2">
+	  <div class="zszz_title"><span><a href="/cjwt" target="_blank">更多>></a></span><b>常见问题</b></div>
+	  <div class="zszz_con">
+	    <div class="rmzy_c">
+	    <script src='/plus/mytag_js.php?aid=3' language='javascript'></script>
+	      <div class="clear"></div>
+        </div>
+	  </div>
+	  <div class="clear"></div>
+    </div>
+	<div class="zszz_bm2">
+	  <div class="zszz_title"><span><a href="/gbyx/zsjz" target="_blank">更多&gt;&gt;</a></span><b>招生动态</b></div>
+	  <div class="zszz_con">
+	    <div class="rmzy_c">
+	     <script src='/plus/mytag_js.php?aid=4' language='javascript'></script>
+	      <div class="clear"></div>
+        </div>
+      </div>
+	  <div class="clear"></div>
+    </div>
+</div>
+  <div class="clear"></div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

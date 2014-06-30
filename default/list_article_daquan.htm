@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.seotitle /}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_templets_skin/}/css/style.css" rel="stylesheet" type="text/css" />
+<link href="{dede:global.cfg_templets_skin/}/css/info.css" rel="stylesheet" type="text/css" />
+<!--SCRIPT LANGUAGE="JavaScript" src=http://float2006.tq.cn/floatcard?adminid=9459157&sort=0 ></SCRIPT-->
+
+<script type="text/javascript">  
+        function $(str){  
+            return (document.getElementById(str));  
+        }  
+          
+        function check_submit(){  
+            if($("dh").value =="" || $("dh").value=="请输入电话"){  
+                alert("电话不能为空!");  
+                return false;  
+            }  
+			if($("ly").value =="" || $("ly").value=="请输入内容"){  
+                alert("内容不能为空!");  
+                return false;  
+            }  
+        }  
+          
+        function mover(){  
+            event.srcElement.focus();  
+            event.srcElement.select();  
+        }  
+          
+    </script>  
+
+<script language=JavaScript type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/tab.js"></script>
+<!--右侧QQ-->
+<link href="{dede:global.cfg_templets_skin/}/css/common.css" rel="stylesheet" type="text/css" />
+<SCRIPT type=text/javascript src="{dede:global.cfg_templets_skin/}/js/jquery.js"></SCRIPT>
+<SCRIPT type=text/javascript src="{dede:global.cfg_templets_skin/}/js/kefu.js"></SCRIPT>
+</head>
+
+
+<body>
+{dede:include filename="head.htm"/}
+<div class="icon"></div>
+<div class="pindao_box">
+<div class="list_left">
+  <div class="list_c">
+    <div class="list_bar1">您现在的位置：<a href="/">高考信息网</a> >
+          {dede:channel currentstyle="
+         <a href='#'>~typename~</a>
+          "}
+          {/dede:channel}</div>
+    <div class="list_news">
+     <ul>
+     {dede:list pagesize='32'}
+      <li><span>[field:pubdate function="GetDateMK(@me)"/]</span><a href="[field:arcurl/]">[field:title/]</a>
+      </li>
+      {/dede:list}
+    </ul> 
+    </div>
+</div>
+      <div class="dede_pages">
+   <ul class="pagelist">
+    {dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="5"/}
+   </ul>
+  </div>
+  <!-- /pages -->
+</div>
+<div class="df_right">
+    <div class="df_bm">
+	<a href="#"><img src="{dede:global.cfg_templets_skin/}/images/1_31.gif"/></a>
+	<span><a href="/templets/default/bm.html" target="_blank"><img src="/templets/default/images/1_32.gif"></a><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=514611750&amp;site=qq&amp;menu=yes"><img src="/templets/default/images/1_33.gif"></a></span></div>
+    <div class="df_bklc">
+      <div class="df_title"><span>更多&gt;&gt;</span><b>报考流程</b></div>
+      <div class="df_bklc_c">
+        <ul>
+          <li><a href="#">选择院校</a></li>
+          <li><a href="#">在线报名</a></li>
+          <li><a href="#">资质审核</a></li>
+          <li><a href="#">缴报名费</a></li>
+          <li><a href="#">入学考试</a></li>
+          <li><a href="#">发通知书</a></li>
+          <li><a href="#">缴纳学费</a></li>
+          <li><a href="#">开学上课</a></li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="df_bklc">
+      <div class="df_title"><b>在线答疑</b></div>
+      <div class="df_bklc">
+<form action="/plus/diy.php" enctype="multipart/form-data" method="post" onsubmit="return check_submit();">
+<input type="hidden" name="action" value="post" />
+<input type="hidden" name="diyid" value="7" />
+<input type="hidden" name="do" value="2" />
+<table style="width:97%;" cellpadding="0" cellspacing="1">
+  <tr><td height="25" colspan="3" valign="top"><b style="font-size:14px; color:#6d6d6d">我想咨询：</b></td></tr>
+<tr>
+
+  <td width="24%" height="23" align="center" valign="middle">姓&nbsp;&nbsp;&nbsp;名：</td>
+  <td width="76%" height="23" align="center"><input type='text' name='yx' id='yx'  class='intxt' value='' style="border:1px solid #d0d1cc;width:173px;height:17px;padding-left:5px;"/>
+</td>
+</tr>
+<tr>
+  <td height="23" align="center" valign="middle" style="color:#F00">电&nbsp;&nbsp;&nbsp;话：</td>
+  <td height="23" align="center"><input type='text' name='sj' id='sj' style="border:1px solid #d0d1cc;width:173px;height:17px;padding-left:5px;"  class='intxt' value='' />
+</td>
+</tr>
+<tr>
+  <td height="23" align="center" valign="middle">身份证：</td>
+  <td height="23" align="center"><input type='text' name='yx1' id='yx1' style="border:1px solid #d0d1cc;width:173px;height:17px;padding-left:5px;"  class='intxt' value='' />
+</td>
+</tr>
+<tr>
+  <td height="74" align="center" valign="top" style="color:#F00; padding-top:6px">内&nbsp;&nbsp;&nbsp;容：</td>
+  <td height="74" align="center"><textarea name='ly' id='ly' style='width:173px;height:70px; border:1px #cccccc solid;'></textarea>
+</td>
+</tr>
+<input name="shijian_c" value="" type="hidden" id="shijian_c" style="width:250px" class="intxt"  /> 
+						<script type="text/javascript">document.getElementById("shijian_c").value=new Date().getFullYear()+'年'+(new Date().getMonth()+1)+'月'+new Date().getDate()+'日'+new Date().getHours()+'时'+new Date().getMinutes()+'分'</script>
+
+<input type="hidden" name="dede_fields" value="yx,text;sj,text;yx1,text;ly,multitext;shijian_c,text" />
+<input type="hidden" name="dede_fieldshash" value="1d3815589b9657847cfaf642b7cfca07" /></table>
+<div align='center' style='height:20px;padding-top:10px; padding-left:30px'>
+<input name="validate" type="text" id="vdcode" style="text-transform:uppercase;" size="8">
+<img id="vdimgck" align="absmiddle" onclick="this.src=this.src+'?'" style="cursor: pointer;" alt="看不清？点击更换" src="/include/vdimgck.php"></div>
+<div align='center' style='height:20px;padding-top:10px; padding-left:30px'>
+<input type="image" src="{dede:global.cfg_templets_skin/}/images/1_40.gif" name="submit" value="提 交" class='coolbg' />
+ 
+<input type="image" src="{dede:global.cfg_templets_skin/}/images/1_41.gif" name="reset" value="重 置" class='coolbg' />
+</div>
+</form>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="df_rmzy">
+      <div class="df_title"><span>更多&gt;&gt;</span><b>招生动态</b></div>
+      <div class="rmzy_c">
+        <ul>
+          <li><a href="#">考在职研究生 自信要贯穿始终</a></li>
+          <li><a href="#">考在职研究生不是&quot;打酱油&quot;就能</a></li>
+          <li><a href="#">在职研究生报考 务必要理性选择</a></li>
+          <li><a href="#">细品真题 巧渡在职研究生初试关</a></li>
+          <li><a href="#">考在职研究生 自信要贯穿始终</a></li>
+          <li><a href="#">考在职研究生不是&quot;打酱油&quot;就能</a></li>
+          <li><a href="#">在职研究生报考 务必要理性选择</a></li>
+          <li><a href="#">细品真题 巧渡在职研究生初试关</a></li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="df_rmzy">
+      <div class="df_title"><span><a href="/cjwt">更多&gt;&gt;</a></span><b>常见问题</b></div>
+      <div class="rmzy_c">
+        <ul>
+        {dede:arclist typeid='29' titlelen='42' row='13'}
+          <li><a href="[field:arcurl /]">[field:title/]</a></li>
+          {/dede:arclist}
+        </ul>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

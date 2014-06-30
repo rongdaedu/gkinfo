@@ -1,0 +1,498 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+<link href="{dede:global.cfg_templets_skin/}/css/style.css" rel="stylesheet" type="text/css" />
+<link href="{dede:global.cfg_templets_skin/}/css/info.css" rel="stylesheet" type="text/css" />
+<!--SCRIPT LANGUAGE="JavaScript" src=http://float2006.tq.cn/floatcard?adminid=9459157&sort=0 ></SCRIPT-->
+<script type="text/javascript">  
+        function $(str){  
+            return (document.getElementById(str));  
+        }  
+          
+        function check_submit(){  
+            if($("dh").value =="" || $("dh").value=="请输入电话"){  
+                alert("电话不能为空!");  
+                return false;  
+            }  
+			if($("ly").value =="" || $("ly").value=="请输入内容"){  
+                alert("内容不能为空!");  
+                return false;  
+            }  
+        }  
+          
+        function mover(){  
+            event.srcElement.focus();  
+            event.srcElement.select();  
+        }  
+          
+    </script>  
+
+<script language=JavaScript type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/tab.js"></script>
+<script language=JavaScript type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/common.js"></script>
+
+
+<style type="text/css">
+.bg {background:url(http://i3.sinaimg.cn/edu/deco/2012/0508/gk_yan_icons.png) 999px 999px no-repeat;}
+.blk07 {float:left; width:300px; padding:10px 0;zoom:1}
+.clearfix {zoom:1; }
+.clearfix:after {content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.fblue {color:#2a6ab1!important;}
+.guanzhu_link {background:url(http://i3.sinaimg.cn/edu/deco/2012/0508/gk_yan_icons.png) 999px 999px no-repeat;}
+.hot {background:url(http://i3.sinaimg.cn/edu/deco/2012/0508/gk_yan_icons.png) 999px 999px no-repeat;}
+.ico {background:url(http://i3.sinaimg.cn/edu/deco/2012/0508/gk_yan_icons.png) 999px 999px no-repeat;}
+.ipt-01 {background:url(http://i3.sinaimg.cn/edu/deco/2012/0508/gk_yan_icons.png) 999px 999px no-repeat;}
+.line01 {background:url(http://i3.sinaimg.cn/edu/deco/2012/0508/gk_yan_icons.png) 999px 999px no-repeat;}
+.list02 {background:url(http://i3.sinaimg.cn/edu/deco/2012/0508/gk_yan_icons.png) 999px 999px no-repeat;}
+.nHot {background:url(http://i3.sinaimg.cn/edu/deco/2012/0508/gk_yan_icons.png) 999px 999px no-repeat;}
+.slide_box {position:relative;zoom:1}
+.slide_btn {background:#fff; width:300px; overflow:hidden;zoom:1;}
+.slide_dot {padding: 10px 0 2px;text-align: center;width: 300px; background:#eef3fa; overflow: hidden;zoom:1;}
+.slide_next {background:url(http://i3.sinaimg.cn/edu/deco/2012/0508/gk_yan_icons.png) 999px 999px no-repeat;}
+.slide_next {background-position:-40px -820px;float:right; width:15px; height:24px; display:block;margin:30px 0 0 0;  line-height:999px; overflow:hidden;zoom:1}
+.slide_next_hover {background:url(http://i3.sinaimg.cn/edu/deco/2012/0508/gk_yan_icons.png) 999px 999px no-repeat;}
+.slide_pre {background:url(http://i3.sinaimg.cn/edu/deco/2012/0508/gk_yan_icons.png) 999px 999px no-repeat;}
+.slide_pre {background-position:0 -820px; float:left; width:15px; height:24px; display:block; margin:30px 15px 0 0; line-height:999px; overflow:hidden;zoom:1}
+.slide_pre_hover {background:url(http://i3.sinaimg.cn/edu/deco/2012/0508/gk_yan_icons.png) 999px 999px no-repeat;}
+.sub01_t {background:url(http://i3.sinaimg.cn/edu/deco/2012/0508/gk_yan_icons.png) 999px 999px no-repeat;}
+.sub02_t {background:url(http://i3.sinaimg.cn/edu/deco/2012/0508/gk_yan_icons.png) 999px 999px no-repeat;}
+.tit02 {background:url(http://i3.sinaimg.cn/edu/deco/2012/0508/gk_yan_icons.png) 999px 999px no-repeat;}
+.tit06 {background:url(http://i3.sinaimg.cn/edu/deco/2012/0508/gk_yan_icons.png) 999px 999px no-repeat;}
+.video {background:url(http://i3.sinaimg.cn/edu/deco/2012/0508/gk_yan_icons.png) 999px 999px no-repeat;}
+.vip {background:url(http://i3.sinaimg.cn/edu/deco/2012/0508/gk_yan_icons.png) 999px 999px no-repeat;}
+a.fblue {color:#2a6ab1!important;}
+#slide06 {width:300px;overflow:hidden; zoom:1}
+#slide07 {width:300px;overflow:hidden; zoom:1}
+#slide08 {width:300px;overflow:hidden; zoom:1}
+.blk071 {float:left; width:300px; padding:10px 0;zoom:1}
+.slide_btn1 {background:#fff; width:300px; overflow:hidden;zoom:1;}
+.slide_dot1 {padding: 10px 0 2px;text-align: center;width: 300px; background:#eef3fa; overflow: hidden;zoom:1;}
+.slide_next1 {background:url(http://i3.sinaimg.cn/edu/deco/2012/0508/gk_yan_icons.png) 999px 999px no-repeat;}
+.slide_next1 {background-position:-40px -820px;float:right; width:15px; height:24px; display:block;margin:30px 0 0 0;  line-height:999px; overflow:hidden;zoom:1}
+.slide_pre1 {background:url(http://i3.sinaimg.cn/edu/deco/2012/0508/gk_yan_icons.png) 999px 999px no-repeat;}
+.slide_pre1 {background-position:0 -820px; float:left; width:15px; height:24px; display:block; margin:30px 15px 0 0; line-height:999px; overflow:hidden;zoom:1}
+</style>
+<!--右侧QQ-->
+<link href="/templets/default/css/common.css" rel="stylesheet" type="text/css" />
+<SCRIPT type=text/javascript src="/templets/default/js/jquery.js"></SCRIPT>
+<SCRIPT type=text/javascript src="/templets/default/js/kefu.js"></SCRIPT>
+</head>
+
+
+<body>
+{dede:include filename="head.htm"/} 
+
+<div class="top_soso">
+<form name="formsearch" action="/plus/search.php" target="_blank">
+ <p class="s1">
+      <input type="hidden" name="kwtype" value="0">
+	  <input name="q" type="text" class="search-text1" id="search-txt1" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}">
+    </p>
+    <p class="s2">
+       <button type="submit" class="search_submit" id=""></button>
+	</p>
+</form>
+  <div class="soso_right">
+    <ul>
+          <li><b>热门搜索：</b></li>
+          <li><a href="/plus/search.php?kwtype=0&q=%E6%8B%9B%E7%94%9F%E7%AE%80%E7%AB%A0" target="_blank">招生简章</a></li>
+          <li><a href="/plus/search.php?kwtype=0&q=%E5%88%86%E6%95%B0%E7%BA%BF" target="_blank">分数线</a></li>
+          <li><a href="/cjwt/wtlb/2013/0118/487.html" target="_blank">怎样根据专业选择学校</a></li>
+    </ul>
+  </div>
+</div>
+<div class="bjtj">
+  <div class="bjtj_tu"><img src="{dede:global.cfg_templets_skin/}/images/1_27.gif"/></div>
+  <div class="bjtj_c">  <a href="/gbyx/zsjz/2014/0529/13178.htm" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/上海交通大学.jpg"/></a>
+  <a href="/gbyx/zsjz/2014/0529/13176.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/华东理工大学.jpg"/></a>
+  <a href="/gbyx/zsjz/2014/0529/13175.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/复旦大学.jpg"/></a>
+  <a href="/gbyx/zsjz/2014/0529/13172.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/华东师范大学.jpg"/></a>
+  <a href="/gbyx/zsjz/2014/0529/13171.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/北京理工大学.jpg"/></a>
+  <a href="/gbyx/zsjz/2014/0529/13170.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/浙江大学.jpg"/></a></div>
+</div>
+
+<div class="pindao_box">
+  <div class="bkzn_title">
+  <img src="{dede:global.cfg_templets_skin/}/images/bk_02.gif" />
+        <ul>
+          <li><img src="{dede:global.cfg_templets_skin/}/images/1_52.gif" />预估分数</li>  
+            <li><img src="{dede:global.cfg_templets_skin/}/images/1_53.gif" />招生计划查询</li>
+            <li><img src="{dede:global.cfg_templets_skin/}/images/1_54.gif" />高考信息查询</li>
+            <li><img src="{dede:global.cfg_templets_skin/}/images/1_55.gif" />专业信息查询</li>
+            <li><img src="{dede:global.cfg_templets_skin/}/images/1_56.gif" />填报志愿</li>
+        </ul>
+  </div>
+  <div class="bkzn_c">
+    <div class="bkzn_left">
+      <div class="bkzn_title2"><span><a href="/bkzn/gzft" target="_blank">更多>></a></span><b>高招访谈</b></div>
+      <div class="bkzn_c2">
+        <div class="p_l_c1">
+          <!--slide start-->
+          <div class="slide_box" id="slide_box06">
+            <div class="slide" id="slide06">
+                  {dede:arclist titlelen='30' row='4' flag='c' infolen='150' typeid='30'}
+                    <div class="blk07">
+                <h4 ><a target="_blank" href="[field:arcurl /]">[field:title/]</a></h4>
+                <div class="pictxt">
+                  <div class="pic"><a target="_blank" href="[field:arcurl /]"><img src="[field:litpic/]" width="120" height="90"  /></a></div>
+                  <div class="txt" style=" line-height:22px;">
+                    <p>[field:info/]... <a  href="[field:arcurl /]" target="_blank" class="fblue">[详细]</a></p>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+              </div>
+              {/dede:arclist}
+
+
+
+            </div>
+            <div class="slide_btn clearfix"> <span class="slide_pre"  onmouseout="this.className='slide_pre'" onmouseover="this.className='slide_pre_hover'" id="slide06_pre">上一个</span>
+              <div class="slide_dot" id="slide_dot06"></div>
+              <span class="slide_next"  onmouseout="this.className='slide_next'" onmouseover="this.className='slide_next_hover'" id="slide06_next">下一个</span> </div>
+          </div>
+
+          <script>
+              var slide_06=new ScrollPic();
+              slide_06.id='slide06';//容器ID为必选参数
+              slide_06.prevId='slide06_pre';//按钮ID (上一个)
+              slide_06.nextId='slide06_next';//按钮ID (下一个)
+              //以下皆是可选参数
+              slide_06.moveNum=1;//每次滚动几个单元格 [默认1个]
+              slide_06.isLoop=true;//无缝循环滚动 [默认是]
+              slide_06.autoPlay=false;
+              slide_06.playTime = 5000;//自动播放时间间隔 [默认5秒]
+              slide_06.dotId='slide_dot06';//点列表容器ID [默认没点]
+              slide_06.dotEvent='mouseover';//点切换事件 [默认click]
+              slide_06.dotClass='dot_list';//点className [默认dot_list]
+              slide_06.dotClassOn = 'current';//当前点 className [默认current]
+              slide_06.init();
+          </script>
+          <!--slide end-->
+        </div>
+        <div class="bkzn_news">
+        <ul>
+             {dede:arclist titlelen='46' row='3' typeid='30'}
+               <li><a href="[field:arcurl /]">[field:title/]</a></li>
+              {/dede:arclist}
+        </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="dxphb">
+      <div class="bkzn_title2"><span><a href="/bkzn/phb" target="_blank">更多&gt;&gt;</a></span><b>大学排行榜</b></div>
+      <div class="dxphb_c">
+      {dede:arclist titlelen='32' row='1' flag='c' infolen='140' typeid='32'}
+        <div class="blk07">
+                <h4 ><a target="_blank" href="[field:arcurl /]">[field:title/]</a></h4>
+                <div class="pictxt">
+                  <div class="pic"><a target="_blank" href="[field:arcurl /]"><img src="[field:litpic/]" width="120" height="90" /></a></div>
+                  <div class="txt" style=" line-height:22px;">
+                    <p>[field:info/]... <a  href="[field:arcurl /]" target="_blank" class="fblue">[详细]</a></p>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+        <div class="clear"></div>
+          </div>
+              <div class="clear"></div>
+              {/dede:arclist}
+        </div>
+<div class="bkzn_news">
+  		<ul>
+             {dede:arclist titlelen='46' row='2' typeid='32'}
+               <li><a href="[field:arcurl /]">[field:title/]</a></li>
+              {/dede:arclist}
+        </ul>
+      </div>
+         
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="bkzn_center">
+    <div class="bkjc">
+    <div class="bkjc_title"><span><a href="/bkzn/bkjq" target="_blank">更多<img src="{dede:global.cfg_templets_skin/}/images/1_58.gif" /></a></span><b><img src="{dede:global.cfg_templets_skin/}/images/1_57.gif" /></b></div>
+    <div class="bkjc_c">
+      <div class="bkjc_n">
+      	<ul>
+        {dede:arclist typeid='31' titlelen='56' row='9'}
+              <li><a href="[field:arcurl /]">[field:title/]</a></li>
+              {/dede:arclist}
+        </ul>
+      
+      </div>
+
+    </div>
+    <div class="clear"></div>
+    </div>
+    <div class="bkjc">
+      <div class="bkjc_title"><span><a href="/zcdt/yxzn" target="_blank">更多<img src="{dede:global.cfg_templets_skin/}/images/1_58.gif" /></a></span><b><img src="{dede:global.cfg_templets_skin/}/images/1_60.gif" /></b></div>
+      <div class="bkjc_c">
+        <div class="bkjc_n">
+          <ul>
+             {dede:arclist typeid='33' titlelen='56' row='9'}
+               <li><a href="[field:arcurl /]">[field:title/]</a></li>
+              {/dede:arclist}
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    </div>
+    <div class="bkzn_right">
+      <div class="zcdt22">
+      <div class="bkjc_title2"><span><a href="/zcdt/zxzx" target="_blank">更多<img src="{dede:global.cfg_templets_skin/}/images/1_58.gif" /></a></span><b>政策动态<img src="{dede:global.cfg_templets_skin/}/images/1_59.gif" /></b></div>
+      <div class="bkzn_news">
+        <ul>
+             {dede:arclist typeid='24' titlelen='42' row='10'}
+              <li><a href="[field:arcurl /]">[field:title/]</a></li>
+              {/dede:arclist}
+        </ul>
+      </div>
+      <div class="clear"></div>
+      </div>
+      <div class="zcdt_ad"><a href="/mbyx/zsjz/2014/0522/12479.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/bk_ad.gif" /></a></div>
+      <div class="zcdt22">
+        <div class="bkjc_title2"><span><img src="{dede:global.cfg_templets_skin/}/images/1_58.gif" /></span><b>专业导航<img src="{dede:global.cfg_templets_skin/}/images/1_59.gif" /></b></div>
+        <div class="bkzn_news">
+          <ul>
+             {dede:arclist typeid='1' titlelen='44' row='6'}
+              <li><a href="[field:arcurl /]">[field:title/]</a></li>
+              {/dede:arclist}
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  <div class="clear"></div>
+  </div>
+  <div class="box_banner"><a href="http://www.zhongboedu.com" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/bkzn_banner.gif"/></a></div>
+<div class="clear"></div>
+</div>
+<div class="pindao_box">
+  <div class="bkzn_title"><img src="{dede:global.cfg_templets_skin/}/images/bk_03.gif" />
+  </div>
+  <div class="bkzn_c">
+    <div class="bkzn_left">
+      <div class="bkzn_title2"><span><a href="/bkzn/zyzt" target="_blank">更多>></a></span><b>重要专题</b></div>
+      <div class="bkzn_c2">
+        <div class="p_l_c1">
+          <!--slide start-->
+          <div class="slide_box" id="slide_box08">
+            <div class="slide" id="slide08">
+                  {dede:arclist titlelen='30' row='4' flag='c' infolen='150' typeid='35'}
+              <div class="blk07">
+                <h4 ><a target="_blank" href="[field:arcurl /]">[field:title/]</a></h4>
+                <div class="pictxt">
+                  <div class="pic"><a target="_blank" href="[field:arcurl /]"><img src="[field:litpic/]" width="120" height="90"  /></a></div>
+                  <div class="txt" style=" line-height:22px;">
+                    <p>[field:info/]... <a  href="[field:arcurl /]" target="_blank" class="fblue">[详细]</a></p>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+              </div>
+              {/dede:arclist}
+   
+            </div>
+            <div class="slide_btn clearfix">
+	<span class="slide_pre"  onmouseout="this.className='slide_pre'" onmouseover="this.className='slide_pre_hover'" id="slide08_pre">上一个</span>
+	<div class="slide_dot" id="slide_dot08"></div>
+	<span class="slide_next"  onmouseout="this.className='slide_next'" onmouseover="this.className='slide_next_hover'" id="slide08_next">下一个</span>
+	</div>
+          </div>
+
+          <script>
+                    var slide_08=new ScrollPic();
+                    slide_08.id='slide08';//容器ID为必选参数
+                    slide_08.prevId='slide08_pre';//按钮ID (上一个)
+                    slide_08.nextId='slide08_next';//按钮ID (下一个)
+                    //以下皆是可选参数
+                    slide_08.moveNum=1;//每次滚动几个单元格 [默认1个]
+                    slide_08.isLoop=true;//无缝循环滚动 [默认是]
+                    slide_08.autoPlay=false;
+                    slide_08.playTime = 5000;//自动播放时间间隔 [默认5秒]
+                    slide_08.dotId='slide_dot08';//点列表容器ID [默认没点]
+                    slide_08.dotEvent='mouseover';//点切换事件 [默认click]
+                    slide_08.dotClass='dot_list';//点className [默认dot_list]
+                    slide_08.dotClassOn = 'current';//当前点 className [默认current]
+                    slide_08.init();
+                </script>
+          <!--slide end-->
+        </div>
+        <div class="bkzn_news">
+        <ul>
+             {dede:arclist titlelen='46' row='3' typeid='35'}
+               <li><a href="[field:arcurl /]">[field:title/]</a></li>
+              {/dede:arclist}
+        </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="dxphb">
+      <div class="bkzn_title2"><span><a href="/bkzn/zyphp">更多&gt;&gt;</a></span><b>专业排行榜</b></div>
+      <div class="dxphb_c">
+      {dede:arclist titlelen='30' row='1' flag='c' infolen='150' typeid='37'}
+      <div class="blk07">
+                <h4 ><a target="_blank" href="[field:arcurl /]">[field:title/]</a></h4>
+                <div class="pictxt">
+                  <div class="pic"><a target="_blank" href="[field:arcurl /]"><img src="[field:litpic/]" width="120" height="90" /></a></div>
+                  <div class="txt" style=" line-height:22px;">
+                    <p>[field:info/]... <a  href="[field:arcurl /]" target="_blank" class="fblue">[详细]</a></p>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+        <div class="clear"></div>
+          </div>
+          {/dede:arclist}
+              <div class="clear"></div>
+        </div>
+<div class="bkzn_news">
+  		<ul>
+        {dede:arclist titlelen='46' row='3' typeid='37'}
+              <li><a href="[field:arcurl /]">[field:title/]</a></li>
+              {/dede:arclist}
+        </ul>
+      </div>
+         
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="bkzn_center">
+      <div class="bkjc">
+        <div class="bkjc_title"><span><a href="/bkzn/jyqj" target="_blank">更多<img src="{dede:global.cfg_templets_skin/}/images/1_58.gif" /></a></span><b><img src="{dede:global.cfg_templets_skin/}/images/1_61.gif" /></b></div>
+        <div class="bkjc_c">
+          <div class="bkjc_n">
+            <ul>
+             {dede:arclist typeid='36' titlelen='56' row='9'}
+               <li><a href="[field:arcurl /]" target="_blank">[field:title/]</a></li>
+              {/dede:arclist}
+            </ul>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="bkjc">
+        <div class="bkjc_title"><span><a href="/bkzn/zyjs" target="_blank">更多<img src="{dede:global.cfg_templets_skin/}/images/1_58.gif" /></a></span><b><img src="{dede:global.cfg_templets_skin/}/images/1_62.gif" /></b></div>
+        <div class="bkjc_c">
+          <div class="bkjc_n">
+            <ul>
+             {dede:arclist typeid='38' titlelen='56' row='9'}
+               <li><a href="[field:arcurl /]" target="_blank">[field:title/]</a></li>
+              {/dede:arclist}
+            </ul>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="bkzn_right">
+      <div class="zcdt22">
+        <div class="bkjc_title2"><span><a href="/tags.php?/%E5%B7%A5%E7%A8%8B%E7%A1%95%E5%A3%AB/" target="_blank">更多<img src="{dede:global.cfg_templets_skin/}/images/1_58.gif" /></a></span><b>专业排行<img src="{dede:global.cfg_templets_skin/}/images/1_59.gif" /></b></div>
+        <div class="bkzn_news2">
+          <ul>
+ <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/tags.php?/%E9%87%91%E8%9E%8D%E5%AD%A6/" target="_blank">金融学</a></li>
+		    <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/tags.php?/%E7%BB%8F%E6%B5%8E%E5%AD%A6/" target="_blank">经济学</a></li>
+		    <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/tags.php?/国际贸易/"  target="_blank">国际贸易</a></li>
+		     <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/tags.php?/机电工程/" target="_blank">机电工程</a></li>
+		    <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/tags.php?/商务管理/" target="_blank">商务管理</a></li>
+		    <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/tags.php?/行政管理/" target="_blank">行政管理</a></li>
+             <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/tags.php?/艺术设计/" target="_blank">艺术设计</a></li>
+		    <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/tags.php?/治安学/" target="_blank">治安学</a></li>
+		    <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/tags.php?/电子商务/" target="_blank">电子商务</a></li>
+            <li><span><a href="/templets/default/bm.html" target="_blank">我要报名>></a></span><a href="/tags.php?/逻辑学/" target="_blank">逻辑学</a></li>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="zcdt_ad"><a href="/zkyx/zsjz/2014/0528/12957.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/bk_ad2.gif" /></a></div>
+      <div class="zcdt22">
+        <div class="bkjc_title2"><span><img src="{dede:global.cfg_templets_skin/}/images/1_58.gif" /></span><b>特别推荐<img src="{dede:global.cfg_templets_skin/}/images/1_59.gif" /></b></div>
+        <div class="bkzn_news">
+          <ul>
+          {dede:arclist flag='c' titlelen='42' row='4'}
+            <li><a href="[field:arcurl /]">[field:title/]</a></li>
+          {/dede:arclist}
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+</div>
+<div class="pindao_box">
+  <div class="bkzn_title"><img src="{dede:global.cfg_templets_skin/}/images/bk_04.gif" /></div>
+  <div class="tdxl_yxtj_c2">
+    <div class="tdxl_yxtj1">
+      <div class="tdxl_yxtj1_tu"><a href="/gbyx/zsjz/2014/0529/13178.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/yxtj_01.gif"  width="141" height="90" /></a><span><a href="/gbyx/zsjz/2014/0529/13178.html" target="_blank">上海交通大学</a></span></div>
+      <div class="tdxl_yxtj1_zi"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2562177520&site=qq&menu=yes"><img src="{dede:global.cfg_templets_skin/}/images/1_36.gif"/></a><a href="/gbyx/zsjz/2014/0529/13178.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/1_37.gif"/></a></div>
+       <div class="clear"></div>
+    </div>
+    <div class="tdxl_yxtj1">
+      <div class="tdxl_yxtj1_tu"><a href="/gbyx/zsjz/2014/0529/13176.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/yxtj_02.gif" width="141" height="90"/></a><span><a href="/gbyx/zsjz/2014/0529/13176.html" target="_blank">华东理工大学</a></span></div>
+      <div class="tdxl_yxtj1_zi"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2562177520&site=qq&menu=yes"><img src="{dede:global.cfg_templets_skin/}/images/1_36.gif"/></a><a href="/gbyx/zsjz/2014/0529/13176.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/1_37.gif"/></a></div>
+      <div class="clear"></div>
+    </div>
+    <div class="tdxl_yxtj1">
+      <div class="tdxl_yxtj1_tu"><a href="/gbyx/zsjz/2014/0529/13175.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/yxtj_03.gif" width="141" height="90"/></a><span><a href="/gbyx/zsjz/2014/0529/13175.html" target="_blank">复旦大学</a></span></div>
+      <div class="tdxl_yxtj1_zi"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2562177520&site=qq&menu=yes"><img src="{dede:global.cfg_templets_skin/}/images/1_36.gif"/></a><a href="/gbyx/zsjz/2014/0529/13175.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/1_37.gif"/></a></div>
+      <div class="clear"></div>
+    </div>
+    <div class="tdxl_yxtj1">
+      <div class="tdxl_yxtj1_tu"><a href="/gbyx/zsjz/2014/0529/13172.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/yxtj_04.gif" width="141" height="90"/></a><span><a href="/gbyx/zsjz/2014/0529/13172.html" target="_blank">华东师范大学</a></span></div>
+      <div class="tdxl_yxtj1_zi"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2562177520&site=qq&menu=yes"><img src="{dede:global.cfg_templets_skin/}/images/1_36.gif"/></a><a href="/gbyx/zsjz/2014/0529/13172.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/1_37.gif"/></a></div>
+      <div class="clear"></div>
+    </div>
+    <div class="tdxl_yxtj1">
+      <div class="tdxl_yxtj1_tu"><a href="/gbyx/zsjz/2014/0529/13171.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/yxtj_05.gif" width="141" height="90"/></a><span><a href="/gbyx/zsjz/2014/0529/13171.html" target="_blank">北京理工大学</a></span></div>
+      <div class="tdxl_yxtj1_zi"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2562177520&site=qq&menu=yes"><img src="{dede:global.cfg_templets_skin/}/images/1_36.gif"/></a><a href="/gbyx/zsjz/2014/0529/13171.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/1_37.gif"/></a></div>
+      <div class="clear"></div>
+    </div>
+    <div class="tdxl_yxtj1">
+      <div class="tdxl_yxtj1_tu"><a href="/gbyx/zsjz/2014/0529/13170.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/yxtj_06.gif" width="141" height="90"/></a><span><a href="/gbyx/zsjz/2014/0529/13170.html" target="_blank">浙江大学</a></span></div>
+      <div class="tdxl_yxtj1_zi"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2562177520&site=qq&menu=yes"><img src="{dede:global.cfg_templets_skin/}/images/1_36.gif"/></a><a href="/gbyx/zsjz/2014/0529/13170.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/1_37.gif"/></a></div>
+      <div class="clear"></div>
+    </div>
+    <div class="tdxl_yxtj1">
+      <div class="tdxl_yxtj1_tu"><a href="/gbyx/zsjz/2014/0529/13177.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/yxtj_07.gif" width="141" height="90"/></a><span><a href="/gbyx/zsjz/2014/0529/13177.html" target="_blank">合肥工业大学</a></span></div>
+      <div class="tdxl_yxtj1_zi"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2562177520&site=qq&menu=yes"><img src="{dede:global.cfg_templets_skin/}/images/1_36.gif"/></a><a href="/gbyx/zsjz/2014/0529/13177.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/1_37.gif"/></a></div>
+      <div class="clear"></div>
+    </div>
+    <div class="tdxl_yxtj1">
+      <div class="tdxl_yxtj1_tu"><a href="/gbyx/zsjz/2014/0529/13174.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/yxtj_08.gif" width="141" height="90"/></a><span><a href="/gbyx/zsjz/2014/0529/13174.html" target="_blank">中南财经政法大学</a></span></div>
+      <div class="tdxl_yxtj1_zi"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2562177520&site=qq&menu=yes"><img src="{dede:global.cfg_templets_skin/}/images/1_36.gif"/></a><a href="/gbyx/zsjz/2014/0529/13174.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/1_37.gif"/></a></div>
+      <div class="clear"></div>
+    </div>
+    <div class="tdxl_yxtj1">
+      <div class="tdxl_yxtj1_tu"><a href="http://www.zhongboedu.com/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/yxtj_09.gif" width="141" height="90"/></a><span><a href="http://www.zhongboedu.com/" target="_blank">上海中博学院</a></span></div>
+      <div class="tdxl_yxtj1_zi"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2562177520&site=qq&menu=yes"><img src="{dede:global.cfg_templets_skin/}/images/1_36.gif"/></a><a href="http://www.zhongboedu.com/" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/1_37.gif"/></a></div>
+      <div class="clear"></div>
+    </div>
+    <div class="tdxl_yxtj1">
+      <div class="tdxl_yxtj1_tu"><a href="/gbyx/zsjz/2014/0529/13173.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/yxtj_10.gif" width="141" height="90"/></a><span><a href="/gbyx/zsjz/2014/0529/13173.html" target="_blank">上海海事学院</a></span></div>
+      <div class="tdxl_yxtj1_zi"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2562177520&site=qq&menu=yes"><img src="{dede:global.cfg_templets_skin/}/images/1_36.gif"/></a><a href="/gbyx/zsjz/2014/0529/13173.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/1_37.gif"/></a></div>
+      <div class="clear"></div>
+    </div>
+    <div class="tdxl_yxtj1">
+      <div class="tdxl_yxtj1_tu"><a href="/gbyx/zsjz/2014/0509/12180.html
+" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/yxtj_11.gif" width="141" height="90"/></a><span><a href="/gbyx/zsjz/2014/0509/12180.html" target="_blank">大连理工大学</a></span></div>
+      <div class="tdxl_yxtj1_zi"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2562177520&site=qq&menu=yes"><img src="{dede:global.cfg_templets_skin/}/images/1_36.gif"/></a><a href="/gbyx/zsjz/2014/0509/12180.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/1_37.gif"/></a></div>
+      <div class="clear"></div>
+    </div>
+    <div class="tdxl_yxtj1">
+      <div class="tdxl_yxtj1_tu"><a href="/jhwzs/zsjz/2014/0509/12233.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/yxtj_12.gif" width="141" height="90"/></a><span><a href="/jhwzs/zsjz/2014/0509/12233.html" target="_blank">武汉理工大学</a></span></div>
+      <div class="tdxl_yxtj1_zi"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2562177520&site=qq&menu=yes"><img src="{dede:global.cfg_templets_skin/}/images/1_36.gif"/></a><a href="/jhwzs/zsjz/2014/0509/12233.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/1_37.gif"/></a></div>
+      <div class="clear"></div>
+    </div>
+<div class="clear"></div>
+  </div>
+  <div class="bkzn_c">
+    <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+</div>
+{dede:include filename="footer.htm"/} 
+</body>
+</html>

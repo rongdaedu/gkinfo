@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_templets_skin/}/css/css.css" rel="stylesheet" type="text/css" />
+<link href="{dede:global.cfg_templets_skin/}/css/info.css" rel="stylesheet" type="text/css" />
+<link href="{dede:global.cfg_templets_skin/}/css/style.css" rel="stylesheet" type="text/css" />
+<SCRIPT LANGUAGE="JavaScript" src=http://float2006.tq.cn/floatcard?adminid=9459157&sort=0 ></SCRIPT>
+</head>
+
+
+<body>
+{dede:include filename="head.htm"/}
+<div class="icon"></div>
+<div class="pindao_box">
+<div class="list_left">
+  <div class="list_c2">
+    <div class="list_bar">您现在的位置：<a href="#">首页</a> > <a href="#">{dede:field.title/}</a></div>
+ <div class="list_title"><b><img src="{dede:global.cfg_templets_skin/}/images/list_2.gif" width="9" height="15" >{dede:field.title/}</b><span></span></div>
+    <div class="zszz_con2">
+	<!--循环下面一段-->
+	{dede:list orderby='sortrank' pagesize='20'}
+	
+    <div class="pindao_rm_xxx">
+        <div class="rm_c">
+          <div class="rm_tu">[field:array runphp='yes']@me = (empty(@me['litpic']) ? "" : "<a href='{@me['arcurl']}' class='preview'><img src='{@me['litpic']}'/></a>"); [/field:array]</div>
+
+          <div class="rm_jj2"><span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></span> [field:description/]......<a href="[field:arcurl/]" target="_blank">[详细]</a></div>
+          <div class="rm_bk">本科</div>
+          <div class="rm_bm">
+            <h1><a href="/templets/default/bm.html" target="_blank">在线报名</a></h1>
+            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2562177520&site=qq&menu=yes">在线咨询</a></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    {/dede:list}
+	  <!--循环上面一段-->
+    <div class="clear"></div>
+    </div>
+<div class="list_xiangxi_pian">
+  <ul>
+        <li>{dede:prenext get='pre'/}</li>
+        <li>{dede:prenext get='next'/}</li>
+        <li></li>
+      </ul>
+</div>
+    <div class="list_info_fenxiang">
+      <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare"> <a class="bds_qzone">QQ空间</a> <a class="bds_tsina">新浪微博</a> <a class="bds_tqq">腾讯微博</a> <a class="bds_renren">人人网</a> <span class="bds_more">更多</span> <a class="shareCount"></a></div>
+      <script type="text/javascript" id="bdshare_js" data="type=tools" ></script>
+      <script type="text/javascript" id="bdshell_js"></script>
+      <script type="text/javascript">
+	document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+      </script>
+      <!-- Baidu Button END -->
+    </div>
+    <div class="list_right_c">
+      <div class="list_right_title">相关阅读</div>
+      <div class="list_right_news2">
+        <ul>
+        {dede:arclist  typeid='' row='8'  titlelen='100' }
+          <li><span> [field:pubdate function=strftime('%Y-%m-%d',@me)/]</span> <a href='[field:arcurl/]' target="_blank">[field:title/]</a></li>
+        {/dede:arclist}
+        </ul>
+      </div>
+    </div>
+</div>
+</div>
+<div class="df_right2">
+	<div class="zszz_bm">
+	  <div class="df_bm"><img src="{dede:global.cfg_templets_skin/}/images/1_31.gif"/><span><a href="/templets/default/bm.html" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/1_32.gif"/><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2562177520&site=qq&menu=yes"><img src="{dede:global.cfg_templets_skin/}/images/1_33.gif"/></a></span></div>
+	</div>
+	<div class="zszz_bm2">
+      <div class="zszz_title"><span><a href="#">更多>></a></span><b>专业导航</b></div>
+      <div class="zszz_news">
+      <ul>
+	{dede:tag row='24' getall='1' sort='hot'}
+		<li><a href='[field:link /]' target="_blank">[field:tag /]</a></li>
+	{/dede:tag}
+       <div class="clear"></div>
+      </ul>
+      </div>
+  <div class="clear"></div>  
+	</div>
+	<div class="zszz_bm2">
+	  <div class="zszz_title"><span><a href="#">更多>></a></span><b>免费咨询</b></div>
+      <div class="zszz_con"><table width="100%" border="0" cellpadding="1" cellspacing="0">
+            <tr height="13">
+              <td height="25" colspan="3"><b style="font-size:14px; color:#6d6d6d">我想读：</b></td>
+            </tr>
+            <tr>
+              <td width="44" height="28" align="right">院校：</td>
+              <td height="28" colspan="2"><select name="ddkc3" id="ddkc3" style="width:168px;border:1px solid #d0d1cc;height:22px;">
+                <option value="0" style="color:#757575;font-size:14px;height:22px;">--请选择课程--</option>
+                <option value="6" style="color:#757575;font-size:14px;">--在职研究生</option>
+                <option value="7" style="color:#757575;font-size:14px;">--MBA/EMBA</option>
+                <option value="27" style="color:#757575;font-size:14px;">--研修班</option>
+                <option value="28"style="color:#757575;font-size:14px;">--同等学力申硕</option>
+                <option value="29" style="color:#757575;font-size:14px;">--在职硕士联考</option>
+              </select></td>
+            </tr>
+            <tr>
+              <td height="28" align="right">电 话：</td>
+              <td height="28" colspan="2"><input name="txtname3" type="text" id="txtname4" class="inpu1" style="border:1px solid #d0d1cc;width:173px;height:17px;padding-left:5px;"/></td>
+            </tr>
+            <tr>
+              <td height="28" align="right">邮 箱：</td>
+              <td height="28" colspan="2"><input name="txtname2" type="text" id="txtname2" class="inpu1" style="border:1px solid #d0d1cc;width:173px;height:17px;padding-left:5px;"/></td>
+            </tr>
+            <tr>
+              <td align="right">留 言：</td>
+              <td height="32" colspan="2"><textarea name='ly' id='ly' style='width:180px;height:70px; border:1px #cccccc solid;'></textarea></td>
+            </tr>
+            <tr>
+              <td align="right"> </td>
+              <td width="73" height="32"><input type="image" name="imageField" src="{dede:global.cfg_templets_skin/}/images/1_40.gif"/></td>
+              <td width="97" height="23"><input type="image" name="imageField2" src="{dede:global.cfg_templets_skin/}/images/1_41.gif"/></td>
+            </tr>
+          </table></div>
+      <div class="clear"></div>
+    </div>
+	<div class="zszz_bm2">
+	  <div class="zszz_title"><span><a href="#">更多>></a></span><b>报名流程</b></div>
+	  <div class="zszz_con"><img src="{dede:global.cfg_templets_skin/}/images/zs_02.gif"/></div>
+	  <div class="clear"></div>
+    </div>
+	<div class="zszz_bm2">
+	  <div class="zszz_title"><span><a href="/cjwt" target="_blank">更多>></a></span><b>常见问题</b></div>
+	  <div class="zszz_con">
+	    <div class="rmzy_c">
+	      <ul>
+        {dede:arclist typeid='29' titlelen='42' row='7'}
+          <li><a href="[field:arcurl /]">[field:title/]</a></li>
+          {/dede:arclist}
+            </ul>
+	      <div class="clear"></div>
+        </div>
+	  </div>
+	  <div class="clear"></div>
+    </div>
+	<div class="zszz_bm2">
+	  <div class="zszz_title"><span><a href="/gbyx/zsjz" target="_blank">更多&gt;&gt;</a></span><b>招生动态</b></div>
+	  <div class="zszz_con">
+	    <div class="rmzy_c">
+	      <ul>
+        {dede:arclist typeid='8' titlelen='42' row='8'}
+          <li><a href="[field:arcurl /]" target="_blank">[field:title/]</a></li>
+          {/dede:arclist}
+          </ul>
+	      <div class="clear"></div>
+        </div>
+      </div>
+	  <div class="clear"></div>
+    </div>
+</div>
+  <div class="clear"></div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

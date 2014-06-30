@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=<?php echo $cfg_soft_lang; ?>" />
+<title><?php echo $cfg_webname;?>_申请友情链接</title>
+
+<link href="/templets/default/css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="flinkpage">
+
+<?php  
+pasterTempletDiy("default/head.htm");  
+?>
+<div class="top_nav">
+  <div class="top_nav1">
+    <div class="top_nav_left">
+      <div class="top_nav_title">报 考</div>
+      <div class="top_nav_news">
+        <ul>
+          <li>本科</li>
+          <li>专科 </li>
+          <li><a href="/gbyx" target="_blank">公办大学 </a></li>
+          <li><span><a href="/mbyx" target="_blank">民办大学</a></span></li>
+          <li><a href="/zkyx" target="_blank">自主招生</a></li>
+          <li><a href="/jhwzs" target="_blank">计划外招生</a></li>
+          <li><a href="/zwlx" target="_blank">中外合作院校</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="top_nav_left">
+      <div class="top_nav_title">专 题</div>
+      <div class="top_nav_news">
+        <ul>
+          <li><span><a href="/sxs/" target="_blank">三校生自主招生</a></span></li>
+          <li><a href="/sxs/" target="_blank">3月专科自主招生</a></li>
+          <li><a href="/cjwt/wtlb/2013/0118/482.html" target="_blank">国家承认的文凭</a></li>
+          <li><a href="/cjwt/wtlb/2013/0118/487.html" target="_blank">如何根据专业选择学校</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="top_nav_left">
+      <div class="top_nav_title">流 程</div>
+      <div class="top_nav_news">
+        <ul>
+          <li>挑选大学</li>
+          <li><span>选择专业</span></li>
+          <li>填报志愿</li>
+          <li>审核</li>
+          <li>录取</li>
+          <li>发通知书</li>
+          <li>入学报到</li>
+        </ul>
+      </div>
+    </div>
+    <div class="top_nav_left">
+      <div class="top_nav_title">服 务</div>
+      <div class="top_nav_news">
+        <ul>
+          <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2562177520&site=qq&menu=yes">在线咨询</a></li>
+          <li><a href="/plus/search.php?kwtype=0&q=%E6%8B%9B%E7%94%9F%E7%AE%80%E7%AB%A0" target="_blank">招生简章</a></li>
+          <li><span><a href="/templets/default/bm.html" target="_blank">在线报名</a></span></li>
+          <li><a href="/bkzn">报考指南 </a></li>
+          <li><span><a href="/cjwt">常见问题</a></span></li>
+          <li><a href="/cjwt/2013/0118/506.html" target="_blank">入学须知 </a></li>
+          <li><a href="/gywm/2013/0118/499.html" target="_blank">联系我们</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div><!-- /header -->
+
+<div class="pindao_box">
+<div class="w960 clear center mt1 cmt-box">
+	<div class="sp-title">
+		<h2>申请链接</h2>
+		<span class="more">
+			<a href="<?php echo "$cfg_phpurl/flink.php"; ?>">查看链接</a>
+		</span>
+	</div>
+	<div class="formbox">
+		  <form name="form1" method="post" action="flink.php">
+		  	<input type='hidden' name='dopost' value='save'>
+		      <table width="100%"  border="0" cellspacing="1" cellpadding="3">
+
+
+                <tr> 
+                  <td height="25">网址：</td>
+                  <td><input name="url" type="text" id="url" value="http://" size="30" class="ipt-txt"></td>
+                </tr>
+                <tr> 
+                  <td height="25">网站名称：</td>
+                  <td><input name="webname" type="text" id="webname" size="30" class="ipt-txt"></td>
+                </tr>
+                <tr> 
+                  <td height="25">网站Logo：</td>
+                  <td><input name="logo" type="text" id="logo" size="30" class="ipt-txt">
+                    (88*31 gif或jpg)</td>
+                </tr>
+                <tr> 
+                  <td height="25">网站简况：</td>
+                  <td> <textarea name="msg" cols="40" rows="4" id="msg" class="ipt-txt"></textarea></td>
+                </tr>
+                <tr> 
+                  <td height="25">站长Email：</td>
+                  <td><input name="email" type="text" id="email" size="30" class="ipt-txt"></td>
+                </tr>
+                <tr> 
+                  <td height="25">网站类型：</td>
+                  <td> <select name="typeid" id="typeid" >
+                      <?php
+        
+        $dsql->SetQuery("select * from #@__flinktype");
+        $dsql->Execute();
+        while($row=$dsql->GetObject())
+        {
+        	echo "	<option value='".$row->id."'>".$row->typename."</option>\r\n";
+        }
+        ?>
+                    </select> </td>
+                </tr>
+                <tr>
+                  <td height="25">验证码：</td>
+                  <td><table width="200" border="0" cellspacing="0" cellpadding="0">
+                      <tr> 
+                        <td width="84"><input name="validate" type="text" id="vdcode2" size="10" class="ipt-txt" style="text-transform: uppercase;"></td>
+                        <td width="116"><img src='../include/vdimgck.php' style="cursor:pointer" onclick="this.src=this.src+'?'" title="点击我更换图片" alt="点击我更换图片" /></td>
+                      </tr>
+                    </table></td>
+                </tr>
+                <tr> 
+                  <td height="51">&nbsp;</td>
+                  <td><input type="submit" name="Submit" value=" 提 交 " class="btn-2">
+                    　 　 
+                    <input type="reset" name="Submit" value=" 重 置 " class="btn-2"></td>
+                </tr>
+              </table>
+		  </form>
+
+	
+	</div>
+
+</div>
+</div>
+<!-- //底部模板 -->
+<?php  
+pasterTempletDiy("default/footer.htm");  
+?>
+</body>
+</html>
